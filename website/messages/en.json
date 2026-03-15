@@ -1,0 +1,198 @@
+{
+  "nav": {
+    "docs": "Documentation",
+    "examples": "Examples",
+    "community": "Community",
+    "blog": "Blog",
+    "changelog": "Changelog",
+    "getStarted": "Get Started",
+    "github": "GitHub"
+  },
+  "hero": {
+    "badge": "Open Source Language v1.3",
+    "title": "From Intent to Reality",
+    "subtitle": "Intenture is a formal semantic language for intent explication — bridging the gap between human vision and AI execution in multi-agent environments.",
+    "cta": "Get Started",
+    "docs": "Read the Docs",
+    "examples": "See Examples"
+  },
+  "features": {
+    "title": "Why Intenture?",
+    "subtitle": "A structured approach to human-AI collaboration that preserves the integrity of your intent through every stage of realization.",
+    "dualLayer": {
+      "title": "Dual-Layer Syntax",
+      "description": "Human-facing natural language and AI-facing canonical structure — one intent, two representations, perfect semantic alignment."
+    },
+    "lifecycle": {
+      "title": "8-State Lifecycle",
+      "description": "From Dream to Realization — a non-linear lifecycle model with Critical Readiness Threshold ensuring your intent is truly ready before execution."
+    },
+    "canvas": {
+      "title": "Intenture Canvas",
+      "description": "Single Source of Truth with 15 structured blocks — Critical, Supporting, and Development layers that capture every dimension of your intent."
+    },
+    "aiProtocol": {
+      "title": "AI Interpretation Protocol",
+      "description": "8-step pipeline from capture to realization, with built-in conflict resolution and safety-first constraint handling."
+    },
+    "visual": {
+      "title": "Visual Notation",
+      "description": "11 canonical primitives with distinct shapes and colors — Intent circles, Actor hexagons, Constraint diamonds — for clear diagramming."
+    },
+    "patterns": {
+      "title": "Pattern Library",
+      "description": "Reference patterns for Health Care Teams, AI Agents, and Products/Services — ready-made templates for common intent structures."
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Intenture transforms fuzzy ideas into actionable, AI-interpretable structures through a systematic explication process.",
+    "step1": {
+      "title": "Express Your Intent",
+      "description": "Start with natural language — describe what you want to achieve in your own words. No special syntax required."
+    },
+    "step2": {
+      "title": "AI Explicates",
+      "description": "The AI interpretation protocol extracts, normalizes, and structures your intent into the canonical Intenture form."
+    },
+    "step3": {
+      "title": "Review & Refine",
+      "description": "The Canvas reveals gaps, contradictions, and assumptions. Iterate until your intent passes the Critical Readiness Threshold."
+    },
+    "step4": {
+      "title": "Realize",
+      "description": "A fully explicated intent becomes the foundation for specs, backlogs, workflows — whatever your realization requires."
+    }
+  },
+  "cta": {
+    "title": "Ready to Explicate Your Intent?",
+    "subtitle": "Join the community building the bridge between human vision and AI execution.",
+    "getStarted": "Quick Start Guide",
+    "joinCommunity": "Join the Community"
+  },
+  "footer": {
+    "description": "An open-source formal semantic language for intent explication in human-AI collaboration.",
+    "docs": "Documentation",
+    "resources": "Resources",
+    "community": "Community",
+    "overview": "Overview",
+    "glossary": "Glossary",
+    "syntax": "Syntax",
+    "lifecycle": "Lifecycle",
+    "quickStart": "Quick Start",
+    "examples": "Examples",
+    "patterns": "Patterns",
+    "visualNotation": "Visual Notation",
+    "github": "GitHub",
+    "discord": "Discord",
+    "contribute": "Contribute",
+    "blog": "Blog",
+    "copyright": "WiseTeam. Open Source."
+  },
+  "docs": {
+    "title": "Documentation",
+    "subtitle": "Complete reference for the Intenture language v1.3",
+    "overview": "Overview",
+    "glossary": "Glossary",
+    "metaModel": "Meta-Model",
+    "syntax": "Syntax",
+    "canvas": "Canvas",
+    "lifecycle": "Lifecycle",
+    "visual": "Visual Notation",
+    "aiProtocol": "AI Protocol",
+    "pmModes": "PM Modes",
+    "patterns": "Patterns",
+    "quickStart": "Quick Start",
+    "onThisPage": "On this page",
+    "editOnGithub": "Edit on GitHub",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "examples": {
+    "title": "Examples Library",
+    "subtitle": "End-to-end examples demonstrating the full Intenture explication process — from human-facing input to AI-facing canonical form.",
+    "healthCare": {
+      "title": "Health Care Team",
+      "description": "Coordinated multi-expert health program with nutritionist, endocrinologist, cardiologist, chef, and fitness trainer.",
+      "status": "Ready for Realization",
+      "pattern": "Health Care Team"
+    },
+    "aiAgent": {
+      "title": "AI Agent",
+      "description": "Specialized AI agent for client request processing with safety boundaries and escalation protocols.",
+      "status": "Ready for Structuring",
+      "pattern": "AI Agent"
+    },
+    "productService": {
+      "title": "Product / Service",
+      "description": "A meta-example: a service that helps people formulate their intents for AI interaction.",
+      "status": "Ready for Structuring",
+      "pattern": "Product/Service"
+    },
+    "viewExample": "View Example",
+    "entryPattern": "Entry Pattern",
+    "readinessStatus": "Readiness Status",
+    "greenfield": "Greenfield"
+  },
+  "community": {
+    "title": "Community",
+    "subtitle": "Intenture is open source. Join us in evolving the language for human-AI intent explication.",
+    "github": {
+      "title": "GitHub",
+      "description": "Star the repo, report issues, submit pull requests. The language specification and all examples are open source."
+    },
+    "discord": {
+      "title": "Discord",
+      "description": "Join the conversation. Discuss patterns, share your intentures, get help from the community."
+    },
+    "contribute": {
+      "title": "Contribute",
+      "description": "Write new patterns, improve the spec, add examples, translate documentation, or build tools around Intenture."
+    },
+    "roadmap": {
+      "title": "Roadmap",
+      "description": "See what's coming in v1.4 and beyond — hierarchical Canvas, multi-intenture projects, formal validation, and more."
+    },
+    "roadmapItems": {
+      "v1": {
+        "title": "Canvas Scalability",
+        "description": "Hierarchical Canvas with sub-intenture support for large projects.",
+        "priority": "Critical"
+      },
+      "v2": {
+        "title": "Multi-intenture Projects",
+        "description": "Intenture Graph with dependency, conflict, and sharing relations.",
+        "priority": "High"
+      },
+      "v3": {
+        "title": "AI Assumption Safety",
+        "description": "Hard rules preventing unconfirmed AI assumptions from reaching realization.",
+        "priority": "High"
+      },
+      "v4": {
+        "title": "Temporal Constraints",
+        "description": "Formalized budget, timeline, and resource constraint subtypes.",
+        "priority": "High"
+      },
+      "v5": {
+        "title": "Formal Validation Schema",
+        "description": "JSON Schema for automated AI-facing form validation.",
+        "priority": "Medium"
+      }
+    }
+  },
+  "changelog": {
+    "title": "Changelog",
+    "subtitle": "Version history and release notes for the Intenture language."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Updates, insights, and stories from the Intenture community.",
+    "comingSoon": "Blog posts coming soon. Stay tuned!"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "backTo": "Back to",
+    "version": "v1.3"
+  }
+}

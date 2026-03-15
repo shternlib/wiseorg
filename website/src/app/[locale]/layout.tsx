@@ -45,6 +45,10 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className="dark">
+      <head>
+        <link rel="icon" href="/intenture-icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/intenture-icon.svg" />
+      </head>
       <body className={`${inter.variable} ${nunito.variable} ${jetbrainsMono.variable} antialiased font-sans`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="flex min-h-screen flex-col">

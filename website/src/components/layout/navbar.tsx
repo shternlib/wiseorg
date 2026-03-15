@@ -44,6 +44,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
+          <img src="/intenture-icon.svg" alt="Intenture" className="h-7 w-7 rounded" />
           <span className="font-display text-xl font-bold gradient-text">
             Intenture
           </span>

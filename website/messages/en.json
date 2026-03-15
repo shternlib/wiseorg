@@ -11,7 +11,7 @@
   "hero": {
     "badge": "Open Source Language v1.3",
     "title": "From Intent to Reality",
-    "subtitle": "Intenture is a formal semantic language for intent explication — bridging the gap between human vision and AI execution in multi-agent environments.",
+    "subtitle": "Intenture is a formal semantic linguo-graphical language for intent explication — designed for precise human-AI interaction in creating, analyzing, developing, and realizing intent.",
     "cta": "Get Started",
     "docs": "Read the Docs",
     "examples": "See Examples"
@@ -71,7 +71,7 @@
     "joinCommunity": "Join the Community"
   },
   "footer": {
-    "description": "An open-source formal semantic language for intent explication in human-AI collaboration.",
+    "description": "A formal semantic linguo-graphical language for intent explication — designed for precise human-AI interaction in creating, analyzing, developing, and realizing intent.",
     "docs": "Documentation",
     "resources": "Resources",
     "community": "Community",
@@ -136,7 +136,7 @@
   },
   "community": {
     "title": "Community",
-    "subtitle": "Intenture is open source. Join us in evolving the language for human-AI intent explication.",
+    "subtitle": "Intenture is open source. Join us in evolving the formal language for intent explication in human-AI interaction.",
     "github": {
       "title": "GitHub",
       "description": "Star the repo, report issues, submit pull requests. The language specification and all examples are open source."

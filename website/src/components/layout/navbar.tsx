@@ -73,7 +73,7 @@ export function Navbar() {
             {locale === "en" ? "RU" : "EN"}
           </Button>
           <a
-            href="https://github.com/nicememe/intenture"
+            href="https://github.com/shternlib/wiseorg"
             target="_blank"
             rel="noopener noreferrer"
           >

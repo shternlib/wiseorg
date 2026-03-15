@@ -71,7 +71,7 @@ export function Footer() {
             <ul className="mt-3 space-y-2">
               <li>
                 <a
-                  href="https://github.com/nicememe/intenture"
+                  href="https://github.com/shternlib/wiseorg"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground transition-colors hover:text-brand-violet"

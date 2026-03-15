@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Github, MessageCircle, GitPullRequest, Map, ArrowUpRight } from "lucide-react";
 
 const channels = [
-  { key: "github", icon: Github, href: "https://github.com/nicememe/intenture" },
+  { key: "github", icon: Github, href: "https://github.com/shternlib/wiseorg" },
   { key: "discord", icon: MessageCircle, href: "#" },
-  { key: "contribute", icon: GitPullRequest, href: "https://github.com/nicememe/intenture/blob/main/CONTRIBUTING.md" },
+  { key: "contribute", icon: GitPullRequest, href: "https://github.com/shternlib/wiseorg/blob/main/CONTRIBUTING.md" },
 ];
 
 export default function CommunityPage() {

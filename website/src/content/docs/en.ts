@@ -36,7 +36,7 @@ The 15 canonical terms (Intent, Object, Constraint, Value, Actor, etc.) are alwa
     `,
   },
   glossary: {
-    title: "Glossary v1.2",
+    title: "Glossary",
     content: `
 ## Core Terms
 
@@ -76,7 +76,7 @@ The 15 canonical terms (Intent, Object, Constraint, Value, Actor, etc.) are alwa
     `,
   },
   "meta-model": {
-    title: "Meta-Model v1.2",
+    title: "Meta-Model",
     content: `
 ## 17 Core Entities
 
@@ -108,7 +108,7 @@ At least **one entity + one semantically valid relation** constitutes a minimal 
     `,
   },
   syntax: {
-    title: "Syntax v0.2",
+    title: "Syntax",
     content: `
 ## Dual-Layer Architecture
 
@@ -165,7 +165,7 @@ Signal: [type: severity] — description
     `,
   },
   canvas: {
-    title: "Intenture Canvas v1.1",
+    title: "Intenture Canvas",
     content: `
 ## Single Source of Truth
 
@@ -207,7 +207,7 @@ The Canvas is the authoritative representation of an intenture. All other forms 
     `,
   },
   lifecycle: {
-    title: "Lifecycle Model v1.1",
+    title: "Lifecycle Model",
     content: `
 ## 8 States
 
@@ -253,7 +253,7 @@ The lifecycle is **not** a waterfall. Allowed movements:
     `,
   },
   visual: {
-    title: "Visual Notation v1.0",
+    title: "Visual Notation",
     content: `
 ## 11 Primitives
 
@@ -286,7 +286,7 @@ acts_on, constrains, creates_value_for, is_measured_by, transitions_to, is_trigg
     `,
   },
   "ai-protocol": {
-    title: "AI Interpretation Protocol v1.2",
+    title: "AI Interpretation Protocol",
     content: `
 ## 8-Step Pipeline
 

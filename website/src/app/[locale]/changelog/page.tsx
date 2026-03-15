@@ -1,10 +1,17 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
-const versions = [
+interface Version {
+  version: string;
+  date: string;
+  changes: string[];
+}
+
+const versionsEn: Version[] = [
   {
     version: "1.3",
     date: "2026-03",
@@ -61,8 +68,72 @@ const versions = [
   },
 ];
 
+const versionsRu: Version[] = [
+  {
+    version: "1.3",
+    date: "2026-03",
+    changes: [
+      "Intent Vocabulary — 8 канонических глаголов (create, improve, maintain, restructure, explore, extend, migrate, retire)",
+      "Constraint Type Vocabulary — 7 типов с уровнями приоритета",
+      "Conflict Resolution Protocol — 3 стратегии (Escalate, Propose Alternative, Request Prioritization)",
+      "Синтаксис Development Layer формализован (States, Transitions, Signals)",
+      "Разграничение Conception и Vision уточнено",
+      "Маркеры Evidence: [fact], [to-collect], [assumed]",
+      "Metrics с целевыми значениями: [target: value] или [target: TBD]",
+      "Entry Patterns: Greenfield, From Concept, Takeover",
+      "Добавлен термин Reverse Explication",
+      "Языковая политика — канонические термины всегда на английском",
+      "Добавлен статус блока Partially Answered",
+      "Добавлен документ Vulnerabilities & Roadmap",
+    ],
+  },
+  {
+    version: "1.2",
+    date: "2026-02",
+    changes: [
+      "PM Operating Modes (4 режима: Exploratory, Structuring, Realization, Evolution)",
+      "Specialized Readiness Matrix для 3 паттернов",
+      "Политика версионирования Explication Record",
+      "Intenture Independence Principle — убрана зависимость от VSM",
+      "Visual Notation v1.0 — формализованы 11 примитивов, 5 типов диаграмм, 3 эталонные диаграммы",
+      "Таблица Lifecycle Transitions очищена и формализована",
+    ],
+  },
+  {
+    version: "1.1",
+    date: "2026-01",
+    changes: [
+      "Добавлена таблица Lifecycle Transitions",
+      "AI Protocol интегрирован с Canvas",
+      "Explication (процесс) отделена от Explication Record (сущность)",
+      "Canvas утверждён как Single Source of Truth",
+      "Обновлены руководства Quick Start и Practical Usage",
+    ],
+  },
+  {
+    version: "1.0",
+    date: "2025-12",
+    changes: [
+      "Первый релиз-кандидат",
+      "Canonical Definition и Manifesto",
+      "Glossary v1, Meta-Model v1 (17 сущностей, 16 связей, 10 формул)",
+      "Syntax v0.1, Lifecycle Model v1 (8 состояний, 11 переходов)",
+      "Visual Notation v0.1, Canvas v1, Object Card v1",
+      "Readiness Checklist, AI Interpretation Protocol v1",
+      "Pattern Library v1 (3 паттерна), 3 сквозных примера",
+    ],
+  },
+];
+
+const versionsMap: Record<string, Version[]> = {
+  en: versionsEn,
+  ru: versionsRu,
+};
+
 export default function ChangelogPage() {
   const t = useTranslations("changelog");
+  const locale = useLocale();
+  const versions = versionsMap[locale] || versionsMap.en;
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">

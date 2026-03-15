@@ -238,10 +238,6 @@ Partially answered:
   },
 };
 
-export async function generateStaticParams() {
-  return Object.keys(examples).map((slug) => ({ slug }));
-}
-
 export default async function ExamplePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const example = examples[slug];

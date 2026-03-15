@@ -1,13 +1,40 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/badge";
+import { ArrowRight } from "lucide-react";
+
+const docOrder = [
+  "overview", "glossary", "meta-model", "syntax", "canvas",
+  "lifecycle", "visual", "ai-protocol", "pm-modes", "patterns", "quick-start",
+];
+
+const docTitleKeys: Record<string, string> = {
+  overview: "overview",
+  glossary: "glossary",
+  "meta-model": "metaModel",
+  syntax: "syntax",
+  canvas: "canvas",
+  lifecycle: "lifecycle",
+  visual: "visual",
+  "ai-protocol": "aiProtocol",
+  "pm-modes": "pmModes",
+  patterns: "patterns",
+  "quick-start": "quickStart",
+};
 
 interface DocContentProps {
   title: string;
   content: string;
+  slug: string;
 }
 
-export function DocContent({ title, content }: DocContentProps) {
+export function DocContent({ title, content, slug }: DocContentProps) {
+  const t = useTranslations("docs");
+  const currentIndex = docOrder.indexOf(slug);
+  const nextSlug = currentIndex >= 0 && currentIndex < docOrder.length - 1 ? docOrder[currentIndex + 1] : null;
+
   return (
     <article className="max-w-3xl pb-16">
       <div className="mb-8">
@@ -22,6 +49,18 @@ export function DocContent({ title, content }: DocContentProps) {
         className="prose-intenture space-y-6 text-muted-foreground"
         dangerouslySetInnerHTML={{ __html: renderContent(content) }}
       />
+      {nextSlug && (
+        <div className="mt-12 border-t border-border/50 pt-6">
+          <Link
+            href={`/docs/${nextSlug}`}
+            className="group flex items-center gap-2 text-brand-violet hover:text-brand-violet/80 transition-colors"
+          >
+            <span className="text-sm text-muted-foreground">{t("next")}:</span>
+            <span className="font-medium">{t(docTitleKeys[nextSlug])}</span>
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+        </div>
+      )}
     </article>
   );
 }

@@ -60,7 +60,7 @@ export default function CommunityPage() {
         <p className="mb-8 text-muted-foreground">{t("roadmap.description")}</p>
 
         <div className="space-y-4">
-          {(["v1", "v2", "v3", "v4", "v5"] as const).map((key) => (
+          {(["v1", "v2", "v3", "v4", "v5", "v6"] as const).map((key) => (
             <Card key={key} className="border-border/50 bg-card/50">
               <CardContent className="flex items-start gap-4 p-5">
                 <div className="mt-0.5">

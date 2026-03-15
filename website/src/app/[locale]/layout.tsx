@@ -25,8 +25,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Intenture — From Intent to Reality",
-  description: "A formal semantic linguo-graphical language for intent explication — designed for precise human-AI interaction in creating, analyzing, developing, and realizing intent.",
+  title: "Intenture - From Intent to Reality",
+  description: "A formal semantic linguo-graphical language for intent explication - designed for precise human-AI interaction in creating, analyzing, developing, and realizing intent.",
 };
 
 export default async function LocaleLayout({

@@ -4,9 +4,9 @@ export const docsEn: Record<string, { title: string; content: string }> = {
     content: `
 ## Canonical Definition
 
-**Intenture** (capitalized) is a formal semantic linguo-graphical language for intent explication — designed for precise human-AI interaction in creating, analyzing, developing, and realizing intent (zamysel).
+**Intenture** (capitalized) is a formal semantic linguo-graphical language for intent explication - designed for precise human-AI interaction in creating, analyzing, developing, and realizing intent (zamysel).
 
-**intenture** (lowercase) is the phenomenon of intent itself — the inner pre-realized shape of creation: an integral unity of intent, conception, vision, and the will to embody them.
+**intenture** (lowercase) is the phenomenon of intent itself - the inner pre-realized shape of creation: an integral unity of intent, conception, vision, and the will to embody them.
 
 ## What Intenture Is NOT
 
@@ -29,8 +29,8 @@ Intenture must:
 
 Intenture operates on a **dual-layer syntax**:
 
-1. **Human-facing form** — natural, semi-structured, visual. Written in the human's language.
-2. **AI-facing form** — canonical, unambiguous, normalizable. Uses Intenture terms in English regardless of document language.
+1. **Human-facing form** - natural, semi-structured, visual. Written in the human's language.
+2. **AI-facing form** - canonical, unambiguous, normalizable. Uses Intenture terms in English regardless of document language.
 
 The 15 canonical terms (Intent, Object, Constraint, Value, Actor, etc.) are always preserved in English.
     `,
@@ -43,7 +43,7 @@ The 15 canonical terms (Intent, Object, Constraint, Value, Actor, etc.) are alwa
 | Term | Definition |
 |------|-----------|
 | **Intenture** | The name of the language |
-| **intenture** | The phenomenon of intent — the inner pre-realized shape of creation |
+| **intenture** | The phenomenon of intent - the inner pre-realized shape of creation |
 | **Explication** | The process of making an intenture explicit, structured, and interpretable |
 | **Reverse Explication** | Recovering intent from an existing implementation |
 | **Explication Record** | A versioned artifact produced by explication |
@@ -53,7 +53,7 @@ The 15 canonical terms (Intent, Object, Constraint, Value, Actor, etc.) are alwa
 | Term | Definition |
 |------|-----------|
 | **Idea** | A local fragment of intenture |
-| **Intent** | Directional will — "what do I want to achieve?" |
+| **Intent** | Directional will - "what do I want to achieve?" |
 | **Conception** | Answers "by what approach?" |
 | **Vision** | Answers "what does the ideal result look like?" |
 | **Will to Embodiment** | The readiness and commitment to realize |
@@ -118,11 +118,11 @@ Natural, semi-structured text. Written in the human's own language. Free-form bu
 ### AI-Facing Form
 Canonical, unambiguous structure with 5 sections:
 
-1. **Core Definition** — Intent, Object, Constraints, Expected Output
-2. **Supporting Context** — Context, Value, Actors, Evidence, Metrics
-3. **Development Layer** — Conception, Vision, States, Transitions, Signals, Risks, Open Questions
-4. **Readiness Layer** — Current Lifecycle State, Critical Gaps, Unknown Yet Items, Realization Decision
-5. **Linked Artifacts** — References to external documents
+1. **Core Definition** - Intent, Object, Constraints, Expected Output
+2. **Supporting Context** - Context, Value, Actors, Evidence, Metrics
+3. **Development Layer** - Conception, Vision, States, Transitions, Signals, Risks, Open Questions
+4. **Readiness Layer** - Current Lifecycle State, Critical Gaps, Unknown Yet Items, Realization Decision
+5. **Linked Artifacts** - References to external documents
 
 ## Intent Vocabulary (8 Verbs)
 
@@ -151,14 +151,14 @@ Canonical, unambiguous structure with 5 sections:
 
 ## Evidence Markers
 
-- \`[fact]\` — Verified information
-- \`[to-collect]\` — Needs to be gathered
-- \`[assumed]\` — AI or human assumption, needs confirmation
+- \`[fact]\` - Verified information
+- \`[to-collect]\` - Needs to be gathered
+- \`[assumed]\` - AI or human assumption, needs confirmation
 
 ## Signal Format
 
 \`\`\`
-Signal: [type: severity] — description
+Signal: [type: severity] - description
   type = operational | quality | safety | feedback
   severity = info | warning | critical
 \`\`\`
@@ -174,26 +174,26 @@ The Canvas is the authoritative representation of an intenture. All other forms 
 ## Three Block Classes
 
 ### Critical Blocks (Must be answered for CRT)
-- **Intent** — What do you want to achieve?
-- **Object** — What does the intent act upon?
-- **Constraints** — What boundaries must not be violated?
-- **Expected Output** — What is the concrete deliverable?
+- **Intent** - What do you want to achieve?
+- **Object** - What does the intent act upon?
+- **Constraints** - What boundaries must not be violated?
+- **Expected Output** - What is the concrete deliverable?
 
 ### Supporting Blocks
-- **Context** — Background and circumstances
-- **Value** — What value does this create?
-- **Actors** — Who is involved? \`[primary]\` / \`[supporting]\`
-- **Evidence** — Facts and data. \`[fact]\` / \`[to-collect]\` / \`[assumed]\`
-- **Metrics** — How is success measured? \`[target: value]\`
+- **Context** - Background and circumstances
+- **Value** - What value does this create?
+- **Actors** - Who is involved? \`[primary]\` / \`[supporting]\`
+- **Evidence** - Facts and data. \`[fact]\` / \`[to-collect]\` / \`[assumed]\`
+- **Metrics** - How is success measured? \`[target: value]\`
 
 ### Development Blocks
-- **Conception** — By what approach?
-- **Vision** — What does the ideal result look like?
-- **States** — Lifecycle phases. \`[complete]\` / \`[partial]\`
-- **Transitions** — Movement between states. \`[trigger: condition]\`
-- **Signals** — Observable events. \`[type: severity]\`
-- **Risks** — Identified threats
-- **Open Questions** — Unresolved items
+- **Conception** - By what approach?
+- **Vision** - What does the ideal result look like?
+- **States** - Lifecycle phases. \`[complete]\` / \`[partial]\`
+- **Transitions** - Movement between states. \`[trigger: condition]\`
+- **Signals** - Observable events. \`[type: severity]\`
+- **Risks** - Identified threats
+- **Open Questions** - Unresolved items
 
 ## Block Statuses
 
@@ -226,10 +226,10 @@ The Canvas is the authoritative representation of an intenture. All other forms 
 
 The gate between **Structured** and **Realizable**. Four conditions must be met:
 
-1. ✅ Intent — Answered
-2. ✅ Object — Answered
-3. ✅ Constraints — Answered
-4. ✅ Expected Output — Answered
+1. ✅ Intent - Answered
+2. ✅ Object - Answered
+3. ✅ Constraints - Answered
+4. ✅ Expected Output - Answered
 
 Additionally, Specialized Readiness blocks (pattern-specific) must have no blocking unknowns.
 
@@ -278,11 +278,11 @@ acts_on, constrains, creates_value_for, is_measured_by, transitions_to, is_trigg
 
 ## 5 Diagram Types
 
-1. **Intent Map** — Core structure: Intent → Object, with Actors, Values, Constraints
-2. **Actor Interaction Map** — How actors relate and coordinate
-3. **Lifecycle Diagram** — State progression with transitions and signals
-4. **Value Map** — Value flows between actors
-5. **Realization Map** — Intent → Artifacts path with milestones
+1. **Intent Map** - Core structure: Intent → Object, with Actors, Values, Constraints
+2. **Actor Interaction Map** - How actors relate and coordinate
+3. **Lifecycle Diagram** - State progression with transitions and signals
+4. **Value Map** - Value flows between actors
+5. **Realization Map** - Intent → Artifacts path with milestones
     `,
   },
   "ai-protocol": {
@@ -326,7 +326,7 @@ acts_on, constrains, creates_value_for, is_measured_by, transitions_to, is_trigg
 
 ## Cyclical Nature
 
-The protocol is **not one-shot**. It repeats during evolution — each pass creates a new Explication Record version.
+The protocol is **not one-shot**. It repeats during evolution - each pass creates a new Explication Record version.
     `,
   },
   "pm-modes": {
@@ -368,7 +368,7 @@ The protocol is **not one-shot**. It repeats during evolution — each pass crea
     content: `
 ## What is a Pattern?
 
-A Pattern defines a **class** of intents — a reusable template with standardized fields. An Example shows a **specific** filled intenture based on a pattern.
+A Pattern defines a **class** of intents - a reusable template with standardized fields. An Example shows a **specific** filled intenture based on a pattern.
 
 ## 3 Reference Patterns
 
@@ -405,9 +405,9 @@ A Pattern defines a **class** of intents — a reusable template with standardiz
 
 Each pattern can be entered via 3 paths:
 
-1. **Greenfield** — Starting from scratch
-2. **From Concept** — Extracting from existing document
-3. **Takeover** — Reverse explicating from existing system
+1. **Greenfield** - Starting from scratch
+2. **From Concept** - Extracting from existing document
+3. **Takeover** - Reverse explicating from existing system
     `,
   },
   "quick-start": {
@@ -451,16 +451,16 @@ Expected Output: Deployed AI support system with CRM integration
 ### Step 4: Check Readiness
 
 Run through the CRT:
-- ✅ Intent — Answered
-- ✅ Object — Answered
-- ✅ Constraints — Answered
-- ✅ Expected Output — Answered
+- ✅ Intent - Answered
+- ✅ Object - Answered
+- ✅ Constraints - Answered
+- ✅ Expected Output - Answered
 
 → Universal CRT passed!
 
 ### Step 5: Iterate
 
-Now fill Supporting and Development blocks. Ask the AI to help you explicate further — it will use the AI Interpretation Protocol to extract, normalize, and validate your intent.
+Now fill Supporting and Development blocks. Ask the AI to help you explicate further - it will use the AI Interpretation Protocol to extract, normalize, and validate your intent.
 
 ## What's Next?
 

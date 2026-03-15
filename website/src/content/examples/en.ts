@@ -1,12 +1,12 @@
 export const examplesEn: Record<string, { title: string; content: string }> = {
   "health-care-team": {
-    title: "Health Care Team — End-to-End Example",
+    title: "Health Care Team - End-to-End Example",
     content: `
 ## Entry Pattern: Greenfield | Readiness: Ready for Realization
 
 ### Human-Facing Form
 
-> I am a man, 40 years old, living in Cyprus (EU). I want to assemble a coordinated team of health experts — nutritionist, endocrinologist, cardiologist, chef, and fitness trainer — who will work together under a unified plan to create a personalized, non-contradictory health program for me.
+> I am a man, 40 years old, living in Cyprus (EU). I want to assemble a coordinated team of health experts - nutritionist, endocrinologist, cardiologist, chef, and fitness trainer - who will work together under a unified plan to create a personalized, non-contradictory health program for me.
 >
 > My baseline: BP 135/85, weight 95kg, height 180cm. Goals: optimize hormones, reduce weight, improve cardiovascular health.
 >
@@ -23,10 +23,10 @@ export const examplesEn: Record<string, { title: string; content: string }> = {
 **Object:** coordinated multi-expert personalized health program
 
 **Constraints:**
-- \`[safety]\` No harm — all recommendations must be safe and non-contradictory
+- \`[safety]\` No harm - all recommendations must be safe and non-contradictory
 - \`[safety]\` Expert conflicts must be resolved before reaching the person
 - \`[legal]\` Full compliance with Cyprus and EU health regulations
-- \`[coordination]\` Unified plan — no isolated expert silos
+- \`[coordination]\` Unified plan - no isolated expert silos
 - \`[quality]\` Evidence-based recommendations only
 - \`[quality]\` Person retains final decision authority
 
@@ -35,7 +35,7 @@ export const examplesEn: Record<string, { title: string; content: string }> = {
 ### Supporting Context
 
 **Actors:**
-- \`[primary]\` Person — Male, 40, Cyprus EU
+- \`[primary]\` Person - Male, 40, Cyprus EU
 - \`[supporting]\` Nutritionist
 - \`[supporting]\` Endocrinologist
 - \`[supporting]\` Cardiologist
@@ -71,10 +71,10 @@ export const examplesEn: Record<string, { title: string; content: string }> = {
 - Active Program → Review \`[trigger: 30-day milestone]\`
 
 **Signals:**
-- \`[safety: critical]\` — Expert recommendations conflict
-- \`[safety: critical]\` — Adverse health reaction detected
-- \`[quality: warning]\` — Progress metrics stagnating
-- \`[operational: info]\` — Scheduled review approaching
+- \`[safety: critical]\` - Expert recommendations conflict
+- \`[safety: critical]\` - Adverse health reaction detected
+- \`[quality: warning]\` - Progress metrics stagnating
+- \`[operational: info]\` - Scheduled review approaching
 
 ### Readiness Layer
 
@@ -82,17 +82,17 @@ export const examplesEn: Record<string, { title: string; content: string }> = {
 
 **Realization Decision:** Ready for Realization
 
-All Critical Blocks answered. All Specialized Readiness conditions met: primary health goal, baseline data, jurisdiction, escalation rules, expert boundaries — all defined.
+All Critical Blocks answered. All Specialized Readiness conditions met: primary health goal, baseline data, jurisdiction, escalation rules, expert boundaries - all defined.
     `,
   },
   "ai-agent": {
-    title: "AI Agent — End-to-End Example",
+    title: "AI Agent - End-to-End Example",
     content: `
 ## Entry Pattern: Greenfield | Readiness: Ready for Structuring
 
 ### Human-Facing Form
 
-> We need an AI agent that processes incoming client requests — interprets them and prepares draft responses or next-action suggestions for the team. It must operate within strict safety boundaries, with mandatory escalation for ambiguous or sensitive cases.
+> We need an AI agent that processes incoming client requests - interprets them and prepares draft responses or next-action suggestions for the team. It must operate within strict safety boundaries, with mandatory escalation for ambiguous or sensitive cases.
 
 ---
 
@@ -105,7 +105,7 @@ All Critical Blocks answered. All Specialized Readiness conditions met: primary 
 **Object:** Specialized AI agent for client request processing
 
 **Constraints:**
-- \`[safety]\` No risky autonomous decisions — all high-impact actions require human approval
+- \`[safety]\` No risky autonomous decisions - all high-impact actions require human approval
 - \`[safety]\` No false promises or commitments to clients
 - \`[safety]\` Mandatory escalation for ambiguous, sensitive, or high-risk cases
 - \`[quality]\` Must remain interpretable and controllable at all times
@@ -136,18 +136,18 @@ All Critical Blocks answered. All Specialized Readiness conditions met: primary 
 ### Development Layer
 
 **States:**
-- \`[partial]\` Draft — initial architecture
-- \`[partial]\` Under validation — testing with historical data
-- Active — processing live requests
-- Escalated — handling edge cases
-- Revised — updated after feedback
+- \`[partial]\` Draft - initial architecture
+- \`[partial]\` Under validation - testing with historical data
+- Active - processing live requests
+- Escalated - handling edge cases
+- Revised - updated after feedback
 
 **Signals:**
-- \`[safety: critical]\` — Dangerous output generated
-- \`[safety: critical]\` — False promise detected in draft
-- \`[quality: warning]\` — Hallucination signs in response
-- \`[operational: warning]\` — Rising error rate
-- \`[feedback: info]\` — Team satisfaction feedback
+- \`[safety: critical]\` - Dangerous output generated
+- \`[safety: critical]\` - False promise detected in draft
+- \`[quality: warning]\` - Hallucination signs in response
+- \`[operational: warning]\` - Rising error rate
+- \`[feedback: info]\` - Team satisfaction feedback
 
 ### Readiness Layer
 
@@ -157,15 +157,15 @@ All Critical Blocks answered. All Specialized Readiness conditions met: primary 
 
 **Critical Gaps:**
 Universal CRT passed (all Critical Blocks answered), but Specialized Readiness has 3 blocking unknowns:
-- ❓ Allowed actions — not yet defined
-- ❓ Escalation rules — not yet defined
-- ❓ Decision boundaries — not yet defined
+- ❓ Allowed actions - not yet defined
+- ❓ Escalation rules - not yet defined
+- ❓ Decision boundaries - not yet defined
 
 **Next Steps:** Define allowed/prohibited actions, establish escalation rules with thresholds, set decision boundary criteria.
     `,
   },
   "product-service": {
-    title: "Product / Service — End-to-End Example",
+    title: "Product / Service - End-to-End Example",
     content: `
 ## Entry Pattern: Greenfield | Readiness: Ready for Structuring
 
@@ -175,7 +175,7 @@ Universal CRT passed (all Critical Blocks answered), but Specialized Readiness h
 >
 > The output should be: structured intent, cards, diagrams, and materials ready for AI consumption.
 
-This is a **meta-example** — an intenture about a product built around the Intenture language itself.
+This is a **meta-example** - an intenture about a product built around the Intenture language itself.
 
 ---
 
@@ -203,7 +203,7 @@ This is a **meta-example** — an intenture about a product built around the Int
 - \`[primary]\` AI systems consuming structured output
 - \`[supporting]\` Intenture language community
 
-**Value:** Bridge between human creativity and AI precision — no intent lost in translation
+**Value:** Bridge between human creativity and AI precision - no intent lost in translation
 
 **Evidence:**
 - \`[fact]\` AI frequently misinterprets complex intents in unstructured conversation
@@ -224,7 +224,7 @@ This is a **meta-example** — an intenture about a product built around the Int
 
 **Critical Gaps:**
 Universal CRT passed. Specialized Readiness has 1 blocking unknown:
-- ❓ First scope boundary — not yet defined
+- ❓ First scope boundary - not yet defined
 
 Partially answered:
 - Target user segments identified but not prioritized

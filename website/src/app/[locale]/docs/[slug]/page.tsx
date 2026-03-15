@@ -17,5 +17,5 @@ export default async function DocPage({ params }: { params: Promise<{ locale: st
     notFound();
   }
 
-  return <DocContent title={doc.title} content={doc.content} />;
+  return <DocContent title={doc.title} content={doc.content} slug={slug} />;
 }

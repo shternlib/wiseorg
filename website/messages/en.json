@@ -11,7 +11,7 @@
   "hero": {
     "badge": "Open Source Language v1.3",
     "title": "From Intent to Reality",
-    "subtitle": "Intenture is a formal semantic linguo-graphical language for intent explication — designed for precise human-AI interaction in creating, analyzing, developing, and realizing intent.",
+    "subtitle": "Intenture is a formal semantic linguo-graphical language for intent explication - designed for precise human-AI interaction in creating, analyzing, developing, and realizing intent.",
     "cta": "Get Started",
     "docs": "Read the Docs",
     "examples": "See Examples"
@@ -21,15 +21,15 @@
     "subtitle": "A structured approach to human-AI collaboration that preserves the integrity of your intent through every stage of realization.",
     "dualLayer": {
       "title": "Dual-Layer Syntax",
-      "description": "Human-facing natural language and AI-facing canonical structure — one intent, two representations, perfect semantic alignment."
+      "description": "Human-facing natural language and AI-facing canonical structure - one intent, two representations, perfect semantic alignment."
     },
     "lifecycle": {
       "title": "8-State Lifecycle",
-      "description": "From Dream to Realization — a non-linear lifecycle model with Critical Readiness Threshold ensuring your intent is truly ready before execution."
+      "description": "From Dream to Realization - a non-linear lifecycle model with Critical Readiness Threshold ensuring your intent is truly ready before execution."
     },
     "canvas": {
       "title": "Intenture Canvas",
-      "description": "Single Source of Truth with 15 structured blocks — Critical, Supporting, and Development layers that capture every dimension of your intent."
+      "description": "Single Source of Truth with 15 structured blocks - Critical, Supporting, and Development layers that capture every dimension of your intent."
     },
     "aiProtocol": {
       "title": "AI Interpretation Protocol",
@@ -37,11 +37,11 @@
     },
     "visual": {
       "title": "Visual Notation",
-      "description": "11 canonical primitives with distinct shapes and colors — Intent circles, Actor hexagons, Constraint diamonds — for clear diagramming."
+      "description": "11 canonical primitives with distinct shapes and colors - Intent circles, Actor hexagons, Constraint diamonds - for clear diagramming."
     },
     "patterns": {
       "title": "Pattern Library",
-      "description": "Reference patterns for Health Care Teams, AI Agents, and Products/Services — ready-made templates for common intent structures."
+      "description": "Reference patterns for Health Care Teams, AI Agents, and Products/Services - ready-made templates for common intent structures."
     }
   },
   "howItWorks": {
@@ -49,7 +49,7 @@
     "subtitle": "Intenture transforms fuzzy ideas into actionable, AI-interpretable structures through a systematic explication process.",
     "step1": {
       "title": "Express Your Intent",
-      "description": "Start with natural language — describe what you want to achieve in your own words. No special syntax required."
+      "description": "Start with natural language - describe what you want to achieve in your own words. No special syntax required."
     },
     "step2": {
       "title": "AI Explicates",
@@ -61,7 +61,7 @@
     },
     "step4": {
       "title": "Realize",
-      "description": "A fully explicated intent becomes the foundation for specs, backlogs, workflows — whatever your realization requires."
+      "description": "A fully explicated intent becomes the foundation for specs, backlogs, workflows - whatever your realization requires."
     }
   },
   "cta": {
@@ -71,7 +71,7 @@
     "joinCommunity": "Join the Community"
   },
   "footer": {
-    "description": "A formal semantic linguo-graphical language for intent explication — designed for precise human-AI interaction in creating, analyzing, developing, and realizing intent.",
+    "description": "A formal semantic linguo-graphical language for intent explication - designed for precise human-AI interaction in creating, analyzing, developing, and realizing intent.",
     "docs": "Documentation",
     "resources": "Resources",
     "community": "Community",
@@ -110,7 +110,7 @@
   },
   "examples": {
     "title": "Examples Library",
-    "subtitle": "End-to-end examples demonstrating the full Intenture explication process — from human-facing input to AI-facing canonical form.",
+    "subtitle": "End-to-end examples demonstrating the full Intenture explication process - from human-facing input to AI-facing canonical form.",
     "healthCare": {
       "title": "Health Care Team",
       "description": "Coordinated multi-expert health program with nutritionist, endocrinologist, cardiologist, chef, and fitness trainer.",
@@ -151,7 +151,7 @@
     },
     "roadmap": {
       "title": "Roadmap",
-      "description": "See what's coming in v1.4 and beyond — hierarchical Canvas, multi-intenture projects, formal validation, and more."
+      "description": "See what's coming in v1.4 and beyond - hierarchical Canvas, multi-intenture projects, formal validation, and more."
     },
     "roadmapItems": {
       "v1": {
@@ -178,6 +178,11 @@
         "title": "Formal Validation Schema",
         "description": "JSON Schema for automated AI-facing form validation.",
         "priority": "Medium"
+      },
+      "v6": {
+        "title": "Visual Diagrams & Graphics",
+        "description": "Full set of canonical diagrams, visual primitives, and interactive graphical elements for the linguo-graphical language.",
+        "priority": "Critical"
       }
     }
   },

@@ -19,7 +19,7 @@ export default async function ExamplePage({ params }: { params: Promise<{ locale
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
-      <DocContent title={example.title} content={example.content} />
+      <DocContent title={example.title} content={example.content} slug={slug} />
     </div>
   );
 }

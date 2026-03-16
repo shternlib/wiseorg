@@ -13,6 +13,24 @@ interface Version {
 
 const versionsEn: Version[] = [
   {
+    version: "1.4",
+    date: "2026-03",
+    changes: [
+      "Assumption Gate - mandatory checkpoint: intenture cannot reach Realizable while any Canvas block has Assumed by AI status",
+      "Accepted Assumption - sixth Canvas block status for consciously accepted AI assumptions",
+      "Three resolution paths for Assumed by AI - Confirm (Answered), Accept (Accepted Assumption), or Reject (Unknown Yet); Accept path forbidden for [safety] and [legal] Constraints",
+      "Step 6a Confirm Assumptions - new step in AI Interpretation Protocol between Stress-Test and Decide Readiness",
+      "Lifecycle Transitions Table - Structured to Realizable transition requires Assumption Gate passed",
+      "PM Operating Modes - Structuring Mode updated with Assumption Gate responsibilities and exit criteria",
+      "Entry Patterns - all three patterns updated to include Confirm Assumptions step",
+      "[resource] - new Constraint type for people, infrastructure, tools, licenses",
+      "Structured Constraint Format - optional machine-readable fields (amount, currency, deadline, flexibility, etc.) for [budget], [timeline], and [resource] constraints",
+      "AI-facing form canonical template updated with structured constraint examples",
+      "Realization Mode - PM tracks spend and deadlines when structured [budget] and [timeline] constraints are present",
+      "Removed per-section version numbers - all sections are part of the unified language version",
+    ],
+  },
+  {
     version: "1.3",
     date: "2026-03",
     changes: [
@@ -69,6 +87,24 @@ const versionsEn: Version[] = [
 ];
 
 const versionsRu: Version[] = [
+  {
+    version: "1.4",
+    date: "2026-03",
+    changes: [
+      "Assumption Gate - обязательный контрольный шлюз: intenture не может перейти в Realizable при наличии блоков со статусом Assumed by AI",
+      "Accepted Assumption - шестой статус блока Canvas для осознанно принятых допущений AI",
+      "Три пути разрешения Assumed by AI - подтвердить (Answered), принять как допущение (Accepted Assumption) или отклонить (Unknown Yet); путь Accept запрещен для [safety] и [legal] Constraints",
+      "Шаг 6a Confirm Assumptions - новый шаг в AI Interpretation Protocol между Stress-Test и Decide Readiness",
+      "Lifecycle Transitions Table - переход Structured в Realizable требует прохождения Assumption Gate",
+      "PM Operating Modes - Structuring Mode обновлен: добавлены ответственности и exit criteria для Assumption Gate",
+      "Entry Patterns - все три паттерна обновлены: включен шаг Confirm Assumptions",
+      "[resource] - новый тип Constraint для людей, инфраструктуры, инструментов, лицензий",
+      "Structured Constraint Format - опциональные машиночитаемые поля (amount, currency, deadline, flexibility и др.) для [budget], [timeline] и [resource]",
+      "Канонический шаблон AI-facing form обновлен: примеры структурированного формата Constraints",
+      "Realization Mode - PM трекает расход и сроки при наличии структурированных [budget] и [timeline] Constraints",
+      "Убрана нумерация версий отдельных разделов - все разделы являются частью единой версии языка",
+    ],
+  },
   {
     version: "1.3",
     date: "2026-03",

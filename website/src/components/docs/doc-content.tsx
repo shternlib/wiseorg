@@ -39,7 +39,7 @@ export function DocContent({ title, content, slug }: DocContentProps) {
     <article className="max-w-3xl pb-16">
       <div className="mb-8">
         <Badge variant="outline" className="mb-4 border-brand-violet/50 text-brand-violet">
-          v1.3
+          v1.4
         </Badge>
         <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
           <span className="gradient-text">{title}</span>

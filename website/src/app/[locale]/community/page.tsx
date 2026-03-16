@@ -67,7 +67,9 @@ export default function CommunityPage() {
                   <Badge
                     variant="outline"
                     className={
-                      t(`roadmapItems.${key}.priority`) === "Critical" || t(`roadmapItems.${key}.priority`) === "Критический"
+                      t(`roadmapItems.${key}.priority`) === "Done" || t(`roadmapItems.${key}.priority`) === "Готово"
+                        ? "border-semantic-success/30 text-semantic-success"
+                        : t(`roadmapItems.${key}.priority`) === "Critical" || t(`roadmapItems.${key}.priority`) === "Критический"
                         ? "border-semantic-error/30 text-semantic-error"
                         : t(`roadmapItems.${key}.priority`) === "High" || t(`roadmapItems.${key}.priority`) === "Высокий"
                         ? "border-semantic-warning/30 text-semantic-warning"

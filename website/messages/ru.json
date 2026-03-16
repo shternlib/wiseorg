@@ -9,7 +9,7 @@
     "github": "GitHub"
   },
   "hero": {
-    "badge": "Open Source Language v1.3",
+    "badge": "Open Source Language v1.4",
     "title": "От замысла к реальности",
     "subtitle": "Intenture - формальный семантический лингво-графический язык экспликации замысла, предназначенный для точного взаимодействия человека и AI при создании, анализе, развитии и реализации замысла.",
     "cta": "Начать",
@@ -91,7 +91,7 @@
   },
   "docs": {
     "title": "Документация",
-    "subtitle": "Полное руководство по языку Intenture v1.3",
+    "subtitle": "Полное руководство по языку Intenture v1.4",
     "overview": "Обзор",
     "glossary": "Глоссарий",
     "metaModel": "Мета-модель",
@@ -151,7 +151,7 @@
     },
     "roadmap": {
       "title": "Дорожная карта",
-      "description": "Что готовится в v1.4 и далее - иерархический Canvas, мульти-intenture проекты, формальная валидация и многое другое."
+      "description": "Что готовится в v1.5 и далее - иерархический Canvas, мульти-intenture проекты, формальная валидация и многое другое."
     },
     "roadmapItems": {
       "v1": {
@@ -166,13 +166,13 @@
       },
       "v3": {
         "title": "Безопасность допущений ИИ",
-        "description": "Жёсткие правила, предотвращающие попадание неподтверждённых допущений ИИ в реализацию.",
-        "priority": "Высокий"
+        "description": "Assumption Gate, статус Accepted Assumption, шаг Confirm Assumptions в AI Protocol. Реализовано в v1.4.",
+        "priority": "Готово"
       },
       "v4": {
-        "title": "Темпоральные ограничения",
-        "description": "Формализованные подтипы ограничений бюджета, сроков и ресурсов.",
-        "priority": "Высокий"
+        "title": "Structured Constraint Format",
+        "description": "Новый тип Constraint [resource], опциональные машиночитаемые поля для [budget], [timeline] и [resource]. Реализовано в v1.4.",
+        "priority": "Готово"
       },
       "v5": {
         "title": "Формальная схема валидации",
@@ -198,6 +198,6 @@
   "common": {
     "learnMore": "Подробнее",
     "backTo": "Назад к",
-    "version": "v1.3"
+    "version": "v1.4"
   }
 }

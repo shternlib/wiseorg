@@ -9,7 +9,7 @@
     "github": "GitHub"
   },
   "hero": {
-    "badge": "Open Source Language v1.3",
+    "badge": "Open Source Language v1.4",
     "title": "From Intent to Reality",
     "subtitle": "Intenture is a formal semantic linguo-graphical language for intent explication - designed for precise human-AI interaction in creating, analyzing, developing, and realizing intent.",
     "cta": "Get Started",
@@ -91,7 +91,7 @@
   },
   "docs": {
     "title": "Documentation",
-    "subtitle": "Complete reference for the Intenture language v1.3",
+    "subtitle": "Complete reference for the Intenture language v1.4",
     "overview": "Overview",
     "glossary": "Glossary",
     "metaModel": "Meta-Model",
@@ -151,7 +151,7 @@
     },
     "roadmap": {
       "title": "Roadmap",
-      "description": "See what's coming in v1.4 and beyond - hierarchical Canvas, multi-intenture projects, formal validation, and more."
+      "description": "See what's coming in v1.5 and beyond - hierarchical Canvas, multi-intenture projects, formal validation, and more."
     },
     "roadmapItems": {
       "v1": {
@@ -166,13 +166,13 @@
       },
       "v3": {
         "title": "AI Assumption Safety",
-        "description": "Hard rules preventing unconfirmed AI assumptions from reaching realization.",
-        "priority": "High"
+        "description": "Assumption Gate rule, Accepted Assumption status, Confirm Assumptions step in AI Protocol. Delivered in v1.4.",
+        "priority": "Done"
       },
       "v4": {
-        "title": "Temporal Constraints",
-        "description": "Formalized budget, timeline, and resource constraint subtypes.",
-        "priority": "High"
+        "title": "Structured Constraint Format",
+        "description": "New [resource] constraint type, optional machine-readable fields for [budget], [timeline], and [resource] constraints. Delivered in v1.4.",
+        "priority": "Done"
       },
       "v5": {
         "title": "Formal Validation Schema",
@@ -198,6 +198,6 @@
   "common": {
     "learnMore": "Learn More",
     "backTo": "Back to",
-    "version": "v1.3"
+    "version": "v1.4"
   }
 }

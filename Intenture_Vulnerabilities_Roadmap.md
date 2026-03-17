@@ -11,7 +11,7 @@
 
 ### V3: Assumed by AI как скрытый risk - RESOLVED in v1.4
 
-**Решение:** Assumption Gate - обязательный контрольный шлюз, запрещающий переход intenture в Realizable при наличии неподтвержденных допущений AI. Новый статус Canvas "Accepted Assumption". Новый шаг 6a "Confirm Assumptions" в AI Interpretation Protocol. Трехуровневая модель Readiness Checklist: Universal CRT + Assumption Gate + Specialized Readiness.
+**Решение:** Assumption Gate - обязательный контрольный шлюз, запрещающий переход intenture в Realizable при наличии неподтвержденных допущений AI. Новый статус Canvas "Accepted Assumption". Новый шаг 7 "Confirm Assumptions" в AI Interpretation Protocol (конвейер перенумерован 1-9). Трехуровневая модель Readiness Checklist: Universal CRT + Assumption Gate + Specialized Readiness.
 
 ### V5: Нет формата для временных и ресурсных ограничений - RESOLVED in v1.4
 

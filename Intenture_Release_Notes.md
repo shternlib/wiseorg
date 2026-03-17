@@ -15,7 +15,7 @@
 1. **Accepted Assumption** - шестой статус блока Canvas. AI сделал допущение, человек его рассмотрел и явно принял как допустимое основание для дальнейшей работы. Отличается от Answered тем, что фиксирует осознанное принятие риска, а не подтверждение факта.
 2. **Три пути разрешения Assumed by AI** - каждое допущение AI должно быть явно разрешено человеком: подтверждено (-> Answered), принято как допущение (-> Accepted Assumption), или отклонено (-> Unknown Yet). Для [safety] и [legal] Constraints путь "Принятие как допущение" недопустим.
 3. **Assumption Gate Rule** - обязательный контрольный шлюз: intenture не может перейти в Realizable, если в Canvas существует хотя бы один блок со статусом "Assumed by AI". Readiness Checklist расширен до трехуровневой модели: Universal CRT + Assumption Gate + Specialized Readiness.
-4. **Шаг 6a - Confirm Assumptions** - новый шаг в AI Interpretation Protocol между Stress-Test и Decide Readiness. PM собирает все допущения AI, показывает человеку, получает решение по каждому, обновляет Canvas.
+4. **Шаг 7 - Confirm Assumptions** - новый шаг в AI Interpretation Protocol между Stress-Test и Decide Readiness. Конвейер перенумерован в сквозную нумерацию 1-9. PM собирает все допущения AI, показывает человеку, получает решение по каждому, обновляет Canvas.
 5. **Glossary** - добавлены термины Assumption Gate и Accepted Assumption.
 6. **Lifecycle Transitions Table** - переход Structured -> Realizable дополнен условием: Assumption Gate пройден.
 7. **PM Operating Modes** - Structuring Mode обновлен: Assumption Gate добавлен в ответственности PM и exit criteria.

@@ -411,11 +411,11 @@ acts_on, constrains, creates_value_for, is_measured_by, transitions_to, is_trigg
 | 4. **Clarify** | Ask questions about gaps, one at a time | Clarified intent |
 | 5. **Validate** | Check for contradictions | Validated intent |
 | 6. **Stress-Test** | Challenge assumptions, identify hidden gaps | Tested intent |
-| 6a. **Confirm Assumptions** | Pass all AI assumptions through explicit human confirmation | Resolved assumptions |
-| 7. **Decide Readiness** | Evaluate against CRT + Assumption Gate + Specialized Matrix | Readiness decision |
-| 8. **Prepare Realization Form** | Generate final artifacts | Canvas, Object Card, AI-facing form |
+| 7. **Confirm Assumptions** | Pass all AI assumptions through explicit human confirmation | Resolved assumptions |
+| 8. **Decide Readiness** | Evaluate against CRT + Assumption Gate + Specialized Matrix | Readiness decision |
+| 9. **Prepare Realization Form** | Generate final artifacts | Canvas, Object Card, AI-facing form |
 
-## Step 6a - Confirm Assumptions
+## Step 7 - Confirm Assumptions
 
 **Input:** all Canvas blocks with status "Assumed by AI" after Clarify, Validate, and Stress-Test steps.
 
@@ -440,9 +440,9 @@ PM shows results to the human after:
 - **Step 4** - clarifying questions (iteratively, one at a time)
 - **Step 5** - discovered contradictions (if any)
 - **Step 6** - identified risks and unknowns
-- **Step 6a** - list of AI assumptions + request for decision on each
-- **Step 7** - Human-facing form + diagrams + readiness decision
-- **Step 8** - final presentation for confirmation before realization start
+- **Step 7** - list of AI assumptions + request for decision on each
+- **Step 8** - Human-facing form + diagrams + readiness decision
+- **Step 9** - final presentation for confirmation before realization start
 
 Steps 2 and 3 are internal PM operations.
 

@@ -419,7 +419,7 @@ acts_on, constrains, creates_value_for, informs, is_measured_by, transitions_to,
   "ai-protocol": {
     title: "Протокол интерпретации AI",
     content: `
-## 9-шаговый конвейер (включая шаг 6a)
+## 9-шаговый конвейер
 
 | Шаг | Действие | Результат |
 |-----|----------|-----------|
@@ -429,11 +429,11 @@ acts_on, constrains, creates_value_for, informs, is_measured_by, transitions_to,
 | 4. **Clarify** | Задает человеку уточняющие вопросы по одному, начиная с Critical Blocks со статусом Unknown Yet или Assumed by AI | Вопросы в естественной форме, по одному |
 | 5. **Validate** | Проверяет внутреннюю непротиворечивость Canvas: Constraints не конфликтуют с Intent, Value согласуется с Expected Output, Actors корректны | При обнаружении противоречий - показ человеку и запрос решения |
 | 6. **Stress-Test** | Выявляет скрытые допущения, пробелы, ложные предпосылки, emotional noise, hidden meaning | Показ человеку потенциальных рисков и неизвестностей |
-| 6a. **Confirm Assumptions** | Проводит все допущения AI через явное подтверждение человека | Список допущений + запрос решения по каждому |
-| 7. **Decide Readiness** | Оценивает readiness по Universal CRT + Assumption Gate + Specialized Matrix | Human-facing form + диаграммы + readiness decision |
-| 8. **Prepare Realization Form** | Формирует финальный AI-facing form, Object Card, Explication Record | Полное Human-facing представление для подтверждения |
+| 7. **Confirm Assumptions** | Проводит все допущения AI через явное подтверждение человека | Список допущений + запрос решения по каждому |
+| 8. **Decide Readiness** | Оценивает readiness по Universal CRT + Assumption Gate + Specialized Matrix | Human-facing form + диаграммы + readiness decision |
+| 9. **Prepare Realization Form** | Формирует финальный AI-facing form, Object Card, Explication Record | Полное Human-facing представление для подтверждения |
 
-## Шаг 6a - Confirm Assumptions
+## Шаг 7 - Confirm Assumptions
 
 **Входные данные:** все блоки Canvas со статусом "Assumed by AI" после шагов Clarify, Validate и Stress-Test.
 
@@ -495,7 +495,7 @@ AI обязан:
 
 ## Циклическая природа
 
-Протокол - **не одноразовый**. При эволюции замысла PM повторяет шаги 2-8 на актуальном состоянии Canvas. Каждый полный проход порождает новый **Explication Record**.
+Протокол - **не одноразовый**. При эволюции замысла PM повторяет шаги 2-9 на актуальном состоянии Canvas. Каждый полный проход порождает новый **Explication Record**.
     `,
   },
   "pm-modes": {

@@ -9,7 +9,7 @@
     "github": "GitHub"
   },
   "hero": {
-    "badge": "Open Source Language v1.4",
+    "badge": "Open Source Language v1.5",
     "title": "От замысла к реальности",
     "subtitle": "Intenture - формальный семантический лингво-графический язык экспликации замысла, предназначенный для точного взаимодействия человека и AI при создании, анализе, развитии и реализации замысла.",
     "cta": "Начать",
@@ -33,7 +33,7 @@
     },
     "aiProtocol": {
       "title": "Протокол интерпретации ИИ",
-      "description": "8-шаговый конвейер от захвата до реализации со встроенным разрешением конфликтов и приоритетом безопасности."
+      "description": "9-шаговый конвейер от захвата до реализации со встроенным разрешением конфликтов, подтверждением допущений и приоритетом безопасности."
     },
     "visual": {
       "title": "Визуальная нотация",
@@ -91,7 +91,7 @@
   },
   "docs": {
     "title": "Документация",
-    "subtitle": "Полное руководство по языку Intenture v1.4",
+    "subtitle": "Полное руководство по языку Intenture v1.5",
     "overview": "Обзор",
     "glossary": "Глоссарий",
     "metaModel": "Мета-модель",
@@ -100,9 +100,10 @@
     "lifecycle": "Жизненный цикл",
     "visual": "Визуальная нотация",
     "aiProtocol": "Протокол ИИ",
-    "pmModes": "Режимы PM",
+    "pmModes": "Режимы IG",
     "patterns": "Паттерны",
     "quickStart": "Быстрый старт",
+    "igPrompt": "Промпт IG",
     "onThisPage": "На этой странице",
     "editOnGithub": "Редактировать на GitHub",
     "previous": "Назад",
@@ -151,18 +152,18 @@
     },
     "roadmap": {
       "title": "Дорожная карта",
-      "description": "Что готовится в v1.5 и далее - иерархический Canvas, мульти-intenture проекты, формальная валидация и многое другое."
+      "description": "Что готовится в v1.6 и далее - иерархический Canvas, механизм отката, приоритизация Value, формальная валидация и многое другое."
     },
     "roadmapItems": {
       "v1": {
-        "title": "Масштабируемость Canvas",
-        "description": "Иерархический Canvas с поддержкой sub-intenture для крупных проектов.",
+        "title": "Масштабируемость Canvas (v1.6)",
+        "description": "Иерархический Canvas со связью contains для крупных проектов. Строится поверх Portfolio: contains становится специальным типом inter-intenture связи с наследованием Constraints, агрегацией Value и roll-up Readiness.",
         "priority": "Критический"
       },
       "v2": {
-        "title": "Мульти-intenture проекты",
-        "description": "Граф Intenture с отношениями зависимости, конфликта и совместного использования.",
-        "priority": "Высокий"
+        "title": "Intenture Portfolio",
+        "description": "Граф связанных intenture с 5 типизированными inter-intenture связями: depends_on, enables, conflicts_with, shares_constraint_with, shares_actor_with. Реализовано в v1.5.",
+        "priority": "Готово"
       },
       "v3": {
         "title": "Безопасность допущений ИИ",
@@ -198,6 +199,6 @@
   "common": {
     "learnMore": "Подробнее",
     "backTo": "Назад к",
-    "version": "v1.4"
+    "version": "v1.5"
   }
 }

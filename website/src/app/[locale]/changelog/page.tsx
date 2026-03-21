@@ -13,6 +13,24 @@ interface Version {
 
 const versionsEn: Version[] = [
   {
+    version: "1.5",
+    date: "2026-03",
+    changes: [
+      "Intenture Portfolio - graph of related intenture with 5 typed inter-intenture relations: depends_on, enables, conflicts_with, shares_constraint_with, shares_actor_with",
+      "Linked Intenture - new section in AI-facing form for declaring inter-intenture relations",
+      "Portfolio Dependencies Gate - 3rd level in four-level Readiness model: blocking dependencies must be Realizable or above",
+      "Intenture Portfolio Map - new diagram type in Visual Notation for visualizing inter-intenture relations",
+      "Inter-intenture visual styles - 5 line styles for relation types in diagrams",
+      "5 new semantic formulas (12-16) for inter-intenture relations",
+      "18 core relations (added 5 inter-intenture relation types)",
+      "AI-facing form canonical template updated with Linked Intenture section",
+      "Lifecycle Transitions Table - Structured to Realizable requires Portfolio Dependencies Gate",
+      "Specialized Readiness Matrix - all patterns updated with Portfolio Dependencies Gate",
+      "PM Exploratory Mode - new responsibility: building Intenture Portfolio Map",
+      "Four-level Readiness model (was three-level): Universal CRT + Assumption Gate + Portfolio Dependencies Gate + Specialized Readiness",
+    ],
+  },
+  {
     version: "1.4",
     date: "2026-03",
     changes: [
@@ -87,6 +105,24 @@ const versionsEn: Version[] = [
 ];
 
 const versionsRu: Version[] = [
+  {
+    version: "1.5",
+    date: "2026-03",
+    changes: [
+      "Intenture Portfolio - граф связанных intenture с 5 типизированными inter-intenture связями: depends_on, enables, conflicts_with, shares_constraint_with, shares_actor_with",
+      "Linked Intenture - новый раздел AI-facing form для декларирования inter-intenture связей",
+      "Portfolio Dependencies Gate - 3-й уровень четырехуровневой модели Readiness: blocking dependencies должны быть в состоянии Realizable или выше",
+      "Intenture Portfolio Map - новый тип диаграммы в Visual Notation для визуализации inter-intenture связей",
+      "Inter-intenture visual styles - 5 стилей линий для типов связей в диаграммах",
+      "5 новых семантических формул (12-16) для inter-intenture связей",
+      "18 базовых отношений (добавлены 5 типов inter-intenture связей)",
+      "Канонический шаблон AI-facing form обновлен: раздел Linked Intenture",
+      "Lifecycle Transitions Table - переход Structured в Realizable требует Portfolio Dependencies Gate",
+      "Specialized Readiness Matrix - все паттерны обновлены с Portfolio Dependencies Gate",
+      "PM Exploratory Mode - новая ответственность: построение Intenture Portfolio Map",
+      "Четырехуровневая модель Readiness (была трехуровневая): Universal CRT + Assumption Gate + Portfolio Dependencies Gate + Specialized Readiness",
+    ],
+  },
   {
     version: "1.4",
     date: "2026-03",

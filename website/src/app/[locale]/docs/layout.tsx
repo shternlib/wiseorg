@@ -5,7 +5,7 @@ import { Link, usePathname } from "@/i18n/navigation";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   BookOpen, List, Network, Code, LayoutGrid, RotateCcw,
-  Palette, Brain, Settings, Library, Zap,
+  Palette, Brain, Settings, Library, Zap, MessageSquare,
 } from "lucide-react";
 
 const docLinks = [
@@ -20,6 +20,7 @@ const docLinks = [
   { slug: "pm-modes", icon: Settings, key: "pmModes" },
   { slug: "patterns", icon: Library, key: "patterns" },
   { slug: "quick-start", icon: Zap, key: "quickStart" },
+  { slug: "ig-prompt", icon: MessageSquare, key: "igPrompt" },
 ];
 
 export default function DocsLayout({ children }: { children: React.ReactNode }) {

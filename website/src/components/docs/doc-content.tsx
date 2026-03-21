@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 const docOrder = [
   "overview", "glossary", "meta-model", "syntax", "canvas",
-  "lifecycle", "visual", "ai-protocol", "pm-modes", "patterns", "quick-start",
+  "lifecycle", "visual", "ai-protocol", "pm-modes", "patterns", "quick-start", "ig-prompt",
 ];
 
 const docTitleKeys: Record<string, string> = {
@@ -22,6 +22,7 @@ const docTitleKeys: Record<string, string> = {
   "pm-modes": "pmModes",
   patterns: "patterns",
   "quick-start": "quickStart",
+  "ig-prompt": "igPrompt",
 };
 
 interface DocContentProps {
@@ -39,7 +40,7 @@ export function DocContent({ title, content, slug }: DocContentProps) {
     <article className="max-w-3xl pb-16">
       <div className="mb-8">
         <Badge variant="outline" className="mb-4 border-brand-violet/50 text-brand-violet">
-          v1.4
+          v1.5
         </Badge>
         <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
           <span className="gradient-text">{title}</span>
@@ -68,14 +69,24 @@ export function DocContent({ title, content, slug }: DocContentProps) {
 function renderContent(content: string): string {
   let html = content;
 
+  // Preserve SVG diagram blocks from markdown processing
+  const preserved: string[] = [];
+  html = html.replace(/<div\b[^>]*>[\s\S]*?<\/svg>[\s\S]*?<\/div>/g, (match) => {
+    preserved.push(match);
+    return `<div data-svg="${preserved.length - 1}"></div>`;
+  });
+
+  // Code blocks - preserve BEFORE markdown processing
+  const preservedCode: string[] = [];
+  html = html.replace(/```(\w*)\n([\s\S]*?)```/g, (_match, _lang, code) => {
+    const rendered = `<pre class="code-block overflow-x-auto p-4 text-sm font-mono text-brand-teal my-4"><code>${escapeHtml(code.trim())}</code></pre>`;
+    preservedCode.push(rendered);
+    return `<div data-code="${preservedCode.length - 1}"></div>`;
+  });
+
   // Headings
   html = html.replace(/^### (.+)$/gm, '<h3 class="mt-8 mb-3 text-lg font-semibold text-foreground">$1</h3>');
   html = html.replace(/^## (.+)$/gm, '<h2 class="mt-10 mb-4 text-xl font-bold text-foreground border-b border-border/50 pb-2">$1</h2>');
-
-  // Code blocks
-  html = html.replace(/```(\w*)\n([\s\S]*?)```/g, (_match, _lang, code) => {
-    return `<pre class="code-block overflow-x-auto p-4 text-sm font-mono text-brand-teal my-4"><code>${escapeHtml(code.trim())}</code></pre>`;
-  });
 
   // Inline code
   html = html.replace(/`([^`]+)`/g, '<code class="rounded bg-secondary px-1.5 py-0.5 text-sm font-mono text-brand-teal">$1</code>');
@@ -137,6 +148,16 @@ function renderContent(content: string): string {
 
   // Checkmarks
   html = html.replace(/✅/g, '<span class="text-semantic-success">✅</span>');
+
+  // Restore preserved SVG blocks
+  preserved.forEach((block, i) => {
+    html = html.replace(`<div data-svg="${i}"></div>`, block);
+  });
+
+  // Restore preserved code blocks
+  preservedCode.forEach((block, i) => {
+    html = html.replace(`<div data-code="${i}"></div>`, block);
+  });
 
   return html;
 }

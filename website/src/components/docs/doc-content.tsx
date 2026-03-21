@@ -69,11 +69,11 @@ export function DocContent({ title, content, slug }: DocContentProps) {
 function renderContent(content: string): string {
   let html = content;
 
-  // Preserve SVG diagram blocks from markdown processing
+  // Preserve HTML blocks (SVGs, download buttons, etc.) from markdown processing
   const preserved: string[] = [];
-  html = html.replace(/<div\b[^>]*>[\s\S]*?<\/svg>[\s\S]*?<\/div>/g, (match) => {
+  html = html.replace(/<div\b[^>]*>[\s\S]*?<\/div>/g, (match) => {
     preserved.push(match);
-    return `<div data-svg="${preserved.length - 1}"></div>`;
+    return `<div data-preserved="${preserved.length - 1}"></div>`;
   });
 
   // Code blocks - preserve BEFORE markdown processing
@@ -149,9 +149,9 @@ function renderContent(content: string): string {
   // Checkmarks
   html = html.replace(/✅/g, '<span class="text-semantic-success">✅</span>');
 
-  // Restore preserved SVG blocks
+  // Restore preserved HTML blocks
   preserved.forEach((block, i) => {
-    html = html.replace(`<div data-svg="${i}"></div>`, block);
+    html = html.replace(`<div data-preserved="${i}"></div>`, block);
   });
 
   // Restore preserved code blocks

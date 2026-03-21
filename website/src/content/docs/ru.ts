@@ -802,6 +802,10 @@ IG покажет вам все допущения, которые он сдел
 3. Начните описывать свой замысел на любом языке
 4. IG проведет вас через весь процесс экспликации
 
+<div class="my-6 flex gap-3"><a href="/ig-skill.md" download="ig-skill.md" class="inline-flex items-center gap-2 rounded-lg bg-brand-violet px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-violet/90">Скачать скилл IG (.md)</a></div>
+
+Для **Claude Code**: поместите скачанный файл в \`.claude/commands/ig.md\` и вызывайте через \`/ig\`.
+
 ---
 
 ## Системный промпт IG

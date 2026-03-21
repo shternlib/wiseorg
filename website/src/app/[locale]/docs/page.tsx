@@ -5,7 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   BookOpen, List, Network, Code, LayoutGrid, RotateCcw,
-  Palette, Brain, Settings, Library, Zap,
+  Palette, Brain, Settings, Library, Zap, MessageSquare,
 } from "lucide-react";
 
 const sections = [
@@ -20,6 +20,7 @@ const sections = [
   { slug: "pm-modes", icon: Settings, key: "pmModes" },
   { slug: "patterns", icon: Library, key: "patterns" },
   { slug: "quick-start", icon: Zap, key: "quickStart" },
+  { slug: "ig-prompt", icon: MessageSquare, key: "igPrompt" },
 ];
 
 export default function DocsPage() {

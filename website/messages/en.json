@@ -9,7 +9,7 @@
     "github": "GitHub"
   },
   "hero": {
-    "badge": "Open Source Language v1.4",
+    "badge": "Open Source Language v1.5",
     "title": "From Intent to Reality",
     "subtitle": "Intenture is a formal semantic linguo-graphical language for intent explication - designed for precise human-AI interaction in creating, analyzing, developing, and realizing intent.",
     "cta": "Get Started",
@@ -33,7 +33,7 @@
     },
     "aiProtocol": {
       "title": "AI Interpretation Protocol",
-      "description": "8-step pipeline from capture to realization, with built-in conflict resolution and safety-first constraint handling."
+      "description": "9-step pipeline from capture to realization, with built-in conflict resolution, assumption confirmation, and safety-first constraint handling."
     },
     "visual": {
       "title": "Visual Notation",
@@ -91,7 +91,7 @@
   },
   "docs": {
     "title": "Documentation",
-    "subtitle": "Complete reference for the Intenture language v1.4",
+    "subtitle": "Complete reference for the Intenture language v1.5",
     "overview": "Overview",
     "glossary": "Glossary",
     "metaModel": "Meta-Model",
@@ -100,9 +100,10 @@
     "lifecycle": "Lifecycle",
     "visual": "Visual Notation",
     "aiProtocol": "AI Protocol",
-    "pmModes": "PM Modes",
+    "pmModes": "IG Modes",
     "patterns": "Patterns",
     "quickStart": "Quick Start",
+    "igPrompt": "IG Prompt",
     "onThisPage": "On this page",
     "editOnGithub": "Edit on GitHub",
     "previous": "Previous",
@@ -151,18 +152,18 @@
     },
     "roadmap": {
       "title": "Roadmap",
-      "description": "See what's coming in v1.5 and beyond - hierarchical Canvas, multi-intenture projects, formal validation, and more."
+      "description": "See what's coming in v1.6 and beyond - hierarchical Canvas, rollback mechanisms, value prioritization, formal validation, and more."
     },
     "roadmapItems": {
       "v1": {
-        "title": "Canvas Scalability",
-        "description": "Hierarchical Canvas with sub-intenture support for large projects.",
+        "title": "Canvas Scalability (v1.6)",
+        "description": "Hierarchical Canvas with contains relation for large projects. Built on top of Portfolio: contains becomes a special inter-intenture relation with constraint inheritance, value aggregation, and readiness roll-up.",
         "priority": "Critical"
       },
       "v2": {
-        "title": "Multi-intenture Projects",
-        "description": "Intenture Graph with dependency, conflict, and sharing relations.",
-        "priority": "High"
+        "title": "Intenture Portfolio",
+        "description": "Graph of related intenture with 5 typed inter-intenture relations: depends_on, enables, conflicts_with, shares_constraint_with, shares_actor_with. Delivered in v1.5.",
+        "priority": "Done"
       },
       "v3": {
         "title": "AI Assumption Safety",
@@ -198,6 +199,6 @@
   "common": {
     "learnMore": "Learn More",
     "backTo": "Back to",
-    "version": "v1.4"
+    "version": "v1.5"
   }
 }

@@ -41,7 +41,7 @@ Intenture operates on a **dual-layer syntax**:
 1. **Human-facing form** - natural, semi-structured, visual. Written in the human's language.
 2. **AI-facing form** - canonical, unambiguous, normalizable. Uses Intenture terms in English regardless of document language.
 
-The 15 canonical terms (Intent, Object, Constraint, Value, Actor, etc.) are always preserved in English.
+The 17 canonical terms (Intent, Object, Constraint, Value, Actor, Intenture Portfolio, Intenture Portfolio Map, etc.) are always preserved in English.
     `,
   },
   glossary: {
@@ -53,16 +53,16 @@ The 15 canonical terms (Intent, Object, Constraint, Value, Actor, etc.) are alwa
 |------|-----------|
 | **Intenture** | The name of the language; a formal semantic linguo-graphical language for intent explication for precise human-AI interaction |
 | **intenture** | The phenomenon of intent - the inner pre-realized shape of creation: an integral unity of Intent, Conception, Vision, and Will to Embodiment |
-| **Explication** | The process of revealing, clarifying, and structurally unfolding the implicit content of intent, translating a hidden or partially expressed inner structure into an explicit, distinguishable, and structured form. Explication is what PM performs in dialogue with the human. |
+| **Explication** | The process of revealing, clarifying, and structurally unfolding the implicit content of intent, translating a hidden or partially expressed inner structure into an explicit, distinguishable, and structured form. Explication is what IG performs in dialogue with the human. |
 | **Reverse Explication** | The process of recovering intenture from an existing implementation. The reverse path: from realization to intent. |
 | **Explication Record** | A versioned artifact produced by explication - a fixed result of the Explication process that can be stored, compared, and versioned |
 | **Explication of intenture** | Revealing, clarifying, and structurally unfolding intent into a form suitable for precise AI interpretation and subsequent realization |
-| **Assumption Gate** | A mandatory control gate in the AI Interpretation Protocol that prohibits an intenture from transitioning to Realizable when unconfirmed AI assumptions exist. PM must pass each assumption through explicit confirmation, acceptance, or rejection by the human. |
+| **Assumption Gate** | A mandatory control gate in the AI Interpretation Protocol that prohibits an intenture from transitioning to Realizable when unconfirmed AI assumptions exist. IG must pass each assumption through explicit confirmation, acceptance, or rejection by the human. |
 | **Accepted Assumption** | A Canvas block status meaning the AI made an assumption and the human reviewed and explicitly accepted it as a valid basis for further work. Differs from Answered in that it records a conscious acceptance of risk, not a confirmation of fact. |
 
-**Explication vs Explication Record:** Explication is the process, Explication Record is its result-artifact. PM performs Explication, the result is fixed as an Explication Record, and the Record is versioned and stored in Linked Artifacts.
+**Explication vs Explication Record:** Explication is the process, Explication Record is its result-artifact. IG performs Explication, the result is fixed as an Explication Record, and the Record is versioned and stored in Linked Artifacts.
 
-**Explication vs Reverse Explication:** Explication goes from human to structure (human speaks, PM structures). Reverse Explication goes from implementation to structure (PM analyzes existing artifacts and recovers intent).
+**Explication vs Reverse Explication:** Explication goes from human to structure (human speaks, IG structures). Reverse Explication goes from implementation to structure (IG analyzes existing artifacts and recovers intent).
 
 ## Level Distinctions
 
@@ -91,6 +91,8 @@ The 15 canonical terms (Intent, Object, Constraint, Value, Actor, etc.) are alwa
 | **Signal** | An event, deviation, impulse, or observation capable of influencing intenture, its interpretation, or its development |
 | **Evidence** | Data, observations, facts, or justifications upon which intenture or its interpretation relies |
 | **Expected Output** | The form in which the realization result must exist and in which AI is obligated to provide or prepare it |
+| **Intenture Portfolio** | A collection of related intenture belonging to one person or team, represented as a typed graph. Each node is a full intenture with its own Canvas, Lifecycle, and Explication Record. |
+| **Intenture Portfolio Map** | A visual diagram of Portfolio: nodes are intenture (showing name, Object type, and current Lifecycle State), edges are typed inter-intenture relations. Formed by IG in Exploratory Mode or Structuring Mode. |
     `,
   },
   "meta-model": {
@@ -100,11 +102,11 @@ The 15 canonical terms (Intent, Object, Constraint, Value, Actor, etc.) are alwa
 
 intenture, Intent, Object, Conception, Vision, Will to Embodiment, Actor, Artifact, Constraint, Value, Metric, State, Transition, Signal, Evidence, Expected Output, Explication Record.
 
-## 17 Core Relations
+## 18 Core Relations
 
-expresses, explicates, acts_on, shapes, constrains, creates_value_for, informs, is_evidenced_by, is_measured_by, transitions_to, is_triggered_by, is_realized_as, is_performed_by, produces, targets, results_in, records.
+expresses, explicates, acts_on, shapes, constrains, creates_value_for, informs, is_evidenced_by, is_measured_by, transitions_to, is_triggered_by, is_realized_as, is_performed_by, produces, targets, results_in, records, depends_on, enables, conflicts_with, shares_constraint_with, shares_actor_with.
 
-## 11 Semantic Formulas
+## 16 Semantic Formulas
 
 | # | Formula |
 |---|---------|
@@ -114,11 +116,34 @@ expresses, explicates, acts_on, shapes, constrains, creates_value_for, informs, 
 | 4 | intenture **is_evidenced_by** Evidence |
 | 5 | Value **is_measured_by** Metric |
 | 6 | Explication (process) **produces** Explication Record |
-| 7 | Explication (process) **is_performed_by** Actor (PM) |
+| 7 | Explication (process) **is_performed_by** Actor (IG) |
 | 8 | intenture **results_in** Expected Output |
 | 9 | Artifact **creates_value_for** Actor |
 | 10 | Transition **is_triggered_by** Signal |
 | 11 | Explication Record **records** intenture |
+| 12 | intenture **depends_on** intenture (cascading dependency between intents) |
+| 13 | intenture **enables** intenture (realization of one opens possibility for another) |
+| 14 | intenture **conflicts_with** intenture (potential conflict between intents) |
+| 15 | intenture **shares_constraint_with** intenture (shared constraints) |
+| 16 | intenture **shares_actor_with** intenture (shared actors) |
+
+### Inter-intenture Relations
+
+Relations between separate intenture within an Intenture Portfolio. Each linked intenture is a full entity with its own Canvas and Lifecycle.
+
+| Relation | Directionality | Semantics |
+|----------|---------------|-----------|
+| **depends_on** | Directed (A depends_on B) | Realization of A is impossible or significantly hindered without realization of B |
+| **enables** | Directed (A enables B) | Realization of A opens the possibility for realization of B |
+| **conflicts_with** | Symmetric | A and B contain a potential conflict (in Constraints, resources, or goals) |
+| **shares_constraint_with** | Symmetric | A and B share common Constraints (type specified: [budget], [timeline], [resource], etc.) |
+| **shares_actor_with** | Symmetric | A and B share common Actors |
+
+Rules:
+1. Cascading blocking via depends_on: if B is not Realizable or above, A cannot transition to Realizable
+2. Conflict requires resolution: conflicts_with is a signal for IG to show and resolve
+3. Shared constraints tracked jointly
+4. Relations recorded on both sides
 
 ## Minimum Unit
 
@@ -136,19 +161,20 @@ However, the minimum unit of the language does not equal the readiness threshold
 Natural, semi-structured text. Written in the human's own language. Free-form but follows recommended patterns. Allows entry from any convenient block.
 
 ### AI-Facing Form
-Canonical, unambiguous structure with 5 sections:
+Canonical, unambiguous structure with 6 sections:
 
 1. **Core Definition** - Intent, Object, Constraints, Expected Output
 2. **Supporting Context** - Context, Value, Actors, Evidence, Metrics
 3. **Development Layer** - Conception, Vision, States, Transitions, Signals, Risks, Open Questions
 4. **Readiness Layer** - Current Lifecycle State, Critical Gaps, Unknown Yet Items, Realization Decision
 5. **Linked Artifacts** - References to external documents
+6. **Linked Intenture** - Inter-intenture relations (depends_on, enables, conflicts_with, shares_constraint_with, shares_actor_with)
 
 ## Intent Vocabulary (8 Verbs)
 
 Not a rigid enum but guidance - each verb implies a different realization strategy.
 
-| Verb | Implied Strategy | Typical PM Mode |
+| Verb | Implied Strategy | Typical IG Mode |
 |------|-----------------|----------------|
 | **create** | Build from scratch | Exploratory -> Structuring -> Realization |
 | **improve** | Enhance existing | Structuring -> Realization |
@@ -210,7 +236,7 @@ Constraint types [budget], [timeline], and [resource] support an optional struct
 
 1. Structured fields are optional. The text format \`- [budget] total budget $5000\` remains valid.
 2. Types [safety], [legal], [quality], [coordination], [scope] remain text-only - they do not need structured format.
-3. PM may suggest the human formalize budget and timeline constraints but is not required to demand it.
+3. IG may suggest the human formalize budget and timeline constraints but is not required to demand it.
 4. When structured fields are present, AI can automatically track budget spending and deadline compliance.
 
 ## Evidence Markers
@@ -283,7 +309,7 @@ Every block with status "Assumed by AI" must be resolved through one of three pa
 2. **Accept as assumption** - the human acknowledges this is an assumption, not fact, but considers it a sufficient basis for starting. Status changes to **Accepted Assumption**.
 3. **Reject** - the human disagrees with the assumption. Status changes to **Unknown Yet** (becomes blocking if this is a Critical Block or Specialized Readiness Block).
 
-For blocks with [safety] and [legal] type Constraints, the "Accept as assumption" path is not permitted. Assumptions in safety and legal areas can only be confirmed (-> Answered) or rejected (-> Unknown Yet). PM must explicitly warn the human if an assumption concerns a safety or legal Constraint.
+For blocks with [safety] and [legal] type Constraints, the "Accept as assumption" path is not permitted. Assumptions in safety and legal areas can only be confirmed (-> Answered) or rejected (-> Unknown Yet). IG must explicitly warn the human if an assumption concerns a safety or legal Constraint.
 
 ## Entry Principle
 
@@ -320,20 +346,29 @@ Additionally:
 - Specialized Readiness Blocks (pattern-specific) must have no blocking unknowns
 - Supporting Blocks filled to a level sufficient for starting work
 
-## Three-Level Readiness Model
+## Four-Level Readiness Model
 
 1. **Universal Readiness Layer** - the Critical Readiness Threshold (4 Critical Blocks Answered)
 2. **Assumption Gate** - mandatory gate: every "Assumed by AI" block must be resolved
-3. **Specialized Readiness Blocks** - pattern-specific additional required fields
+3. **Portfolio Dependencies Gate** - if depends_on relations exist, all blocking dependencies must be in Realizable or above state
+4. **Specialized Readiness Blocks** - pattern-specific additional required fields
+
+### Portfolio Dependencies Gate
+
+If an intenture has depends_on relations in Linked Intenture, IG must verify the state of blocking dependencies before Readiness Decision:
+- All intenture that the current one depends on must be in Realizable or above state
+- If any blocking dependency is not Realizable or above, transition is blocked
+- IG shows blocking dependencies to human and proposes options
+- Portfolio Dependencies Gate is optional: skipped if no depends_on relations exist
 
 ## Lifecycle Transitions Table
 
 | Transition | Trigger | Minimum Condition |
 |------------|---------|-------------------|
-| Dream / Vision Seed -> Exploratory | Human begins dialogue with PM | At least one of: Intent, Object, Vision expressed |
-| Exploratory -> Explicated | PM completes initial round of questions | All Critical Blocks filled: Intent, Object, Constraints, Expected Output |
-| Explicated -> Structured | PM normalizes Canvas into AI-facing form | AI-facing form valid, no internal contradictions, all Critical Blocks have status Answered |
-| Structured -> Realizable | CRT + Assumption Gate passed | All 4 CRT conditions met + Assumption Gate passed (no "Assumed by AI" blocks) + Supporting Blocks sufficient + Specialized Readiness met |
+| Dream / Vision Seed -> Exploratory | Human begins dialogue with IG | At least one of: Intent, Object, Vision expressed |
+| Exploratory -> Explicated | IG completes initial round of questions | All Critical Blocks filled: Intent, Object, Constraints, Expected Output |
+| Explicated -> Structured | IG normalizes Canvas into AI-facing form | AI-facing form valid, no internal contradictions, all Critical Blocks have status Answered |
+| Structured -> Realizable | CRT + Assumption Gate passed | All 4 CRT conditions met + Assumption Gate passed (no "Assumed by AI" blocks) + Portfolio Dependencies Gate passed (all blocking dependencies in Realizable or above) + Supporting Blocks sufficient + Specialized Readiness met |
 | Realizable -> In Realization | Human confirms start | Explicit confirmation from human |
 | In Realization -> Evolving | Significant feedback received | Critical Signal from any source |
 | Evolving -> Structured | Intent substantially changed | Changes affect Critical Blocks - re-normalization of AI-facing form required |
@@ -351,7 +386,7 @@ The lifecycle is **not** a waterfall. Allowed movements:
 
 ## Versioning Principle
 
-At each significant transition, PM fixes a new **Explication Record** - a versioned snapshot of the current state of intenture. This ensures traceability of intent evolution and the ability to compare versions.
+At each significant transition, IG fixes a new **Explication Record** - a versioned snapshot of the current state of intenture. This ensures traceability of intent evolution and the ability to compare versions.
 
 ## Realization Decisions
 
@@ -384,18 +419,33 @@ At each significant transition, PM fixes a new **Explication Record** - a versio
 | **Evidence** | Document with folded corner | Gray |
 | **Artifact** | Rectangle with side marker | Gray |
 
+<div class="my-8 rounded-xl border border-border/50 p-6 overflow-x-auto" style="background:rgba(10,10,20,0.5)"><svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" style="width:100%;min-width:580px;height:auto"><style>.n{font-family:Inter,system-ui,sans-serif;font-weight:600;font-size:12px;letter-spacing:0.02em}.s{font-family:Inter,system-ui,sans-serif;font-weight:400;font-size:10px;fill:#71717A}</style><g transform="translate(95,80)"><circle r="38" fill="rgba(139,92,246,0.12)" stroke="#8B5CF6" stroke-width="2.5"/><text class="n" text-anchor="middle" y="5" fill="#C4B5FD">Intent</text><text class="s" text-anchor="middle" y="58">Circle · Purple</text></g><g transform="translate(285,80)"><rect x="-50" y="-32" width="100" height="64" rx="5" fill="rgba(156,163,175,0.1)" stroke="#9CA3AF" stroke-width="2"/><text class="n" text-anchor="middle" y="5" fill="#D1D5DB">Object</text><text class="s" text-anchor="middle" y="55">Rectangle · Gray</text></g><g transform="translate(475,80)"><polygon points="0,-38 33,-19 33,19 0,38 -33,19 -33,-19" fill="rgba(45,212,191,0.12)" stroke="#2DD4BF" stroke-width="2.5"/><text class="n" text-anchor="middle" y="5" fill="#5EEAD4">Actor</text><text class="s" text-anchor="middle" y="58">Hexagon · Teal</text></g><g transform="translate(665,80)"><rect x="-52" y="-24" width="104" height="48" rx="24" fill="rgba(45,212,191,0.12)" stroke="#2DD4BF" stroke-width="2"/><text class="n" text-anchor="middle" y="5" fill="#5EEAD4">Value</text><text class="s" text-anchor="middle" y="48">Pill · Teal</text></g><g transform="translate(95,220)"><polygon points="0,-42 42,0 0,42 -42,0" fill="rgba(248,113,113,0.12)" stroke="#F87171" stroke-width="2.5"/><text class="n" text-anchor="middle" y="5" fill="#FCA5A5">Constraint</text><text class="s" text-anchor="middle" y="62">Diamond · Coral</text></g><g transform="translate(285,220)"><rect x="-52" y="-32" width="104" height="64" rx="5" fill="rgba(34,197,94,0.1)" stroke="#22C55E" stroke-width="3.5"/><text class="n" text-anchor="middle" y="-3" fill="#86EFAC">Expected</text><text class="n" text-anchor="middle" y="13" fill="#86EFAC">Output</text><text class="s" text-anchor="middle" y="55">Bold border · Green</text></g><g transform="translate(475,220)"><rect x="-52" y="-34" width="104" height="68" rx="5" fill="rgba(139,92,246,0.08)" stroke="#8B5CF6" stroke-width="2"/><rect x="-44" y="-26" width="88" height="52" rx="4" fill="rgba(45,212,191,0.06)" stroke="#2DD4BF" stroke-width="1.5" stroke-dasharray="4 2"/><text class="n" text-anchor="middle" y="5" fill="#A78BFA">State</text><text class="s" text-anchor="middle" y="55">Double frame</text></g><g transform="translate(665,220)"><rect x="-48" y="-20" width="96" height="40" rx="20" fill="rgba(45,212,191,0.12)" stroke="#2DD4BF" stroke-width="2"/><text class="n" text-anchor="middle" y="5" fill="#5EEAD4">Metric</text><text class="s" text-anchor="middle" y="44">Capsule · Teal</text></g><g transform="translate(190,370)"><path d="M 3,-32 L -12,-3 L 0,-3 L -3,32 L 12,3 L 0,3 Z" fill="rgba(248,113,113,0.2)" stroke="#F87171" stroke-width="2" stroke-linejoin="round"/><text class="n" text-anchor="middle" y="52" fill="#FCA5A5">Signal</text><text class="s" text-anchor="middle" y="67">Lightning · Coral</text></g><g transform="translate(380,370)"><path d="M-42,-32 L28,-32 L42,-18 L42,32 L-42,32 Z" fill="rgba(156,163,175,0.1)" stroke="#9CA3AF" stroke-width="2"/><path d="M28,-32 L28,-18 L42,-18" fill="none" stroke="#9CA3AF" stroke-width="1.5"/><text class="n" text-anchor="middle" y="5" fill="#D1D5DB">Evidence</text><text class="s" text-anchor="middle" y="55">Folded doc · Gray</text></g><g transform="translate(570,370)"><rect x="-42" y="-32" width="84" height="64" rx="5" fill="rgba(156,163,175,0.1)" stroke="#9CA3AF" stroke-width="2"/><rect x="-42" y="-32" width="7" height="64" fill="#9CA3AF" rx="1"/><text class="n" text-anchor="middle" x="4" y="5" fill="#D1D5DB">Artifact</text><text class="s" text-anchor="middle" y="55">Side marker · Gray</text></g></svg></div>
+
 ## 9 Relation Types
 
 All relations are depicted as **labeled arrows** connecting primitives:
 acts_on, constrains, creates_value_for, is_measured_by, transitions_to, is_triggered_by, is_performed_by, is_evidenced_by, is_realized_as.
 
-## 5 Diagram Types
+## 6 Diagram Types
 
 1. **Intent Map** - Core structure: Intent -> Object, with Actors, Values, Constraints. Formed in Structuring Mode.
 2. **Actor Interaction Map** - How actors relate and coordinate. Useful for cases with multiple roles.
 3. **Lifecycle Diagram** - State progression with transitions, signals, and CRT as a dividing line.
 4. **Value Map** - Value flows between actors.
 5. **Realization Map** - Intent -> Artifacts path with milestones.
+6. **Intenture Portfolio Map** - Graph of relations between intenture in a Portfolio. Nodes are intenture (name, Object type, Lifecycle State), edges are typed inter-intenture relations (depends_on, enables, conflicts_with, shares_constraint_with, shares_actor_with). Formed when a person works with more than one intenture.
+
+### Inter-intenture Visual Styles
+
+| Relation | Line Style | Recommended Color | Directionality |
+|----------|-----------|------------------|----------------|
+| depends_on | Dashed with arrow | Amber / Orange | Directed |
+| enables | Solid with arrow | Teal | Directed |
+| conflicts_with | Dashed without arrow | Red / Coral | Symmetric |
+| shares_constraint_with | Dotted | Indigo | Symmetric |
+| shares_actor_with | Dash-dot | Light Indigo | Symmetric |
+
+<div class="my-6 rounded-xl border border-border/50 p-5 overflow-x-auto" style="background:rgba(10,10,20,0.5)"><svg viewBox="0 0 620 210" xmlns="http://www.w3.org/2000/svg" style="width:100%;min-width:440px;height:auto"><style>.rl{font-family:Inter,system-ui,sans-serif;font-weight:500;font-size:12px}.rd{font-family:Inter,system-ui,sans-serif;font-weight:400;font-size:10px;fill:#71717A}</style><g transform="translate(0,25)"><text class="rl" x="12" y="5" fill="#FBBF24">depends_on</text><line x1="210" y1="0" x2="540" y2="0" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="12 6"/><polygon points="545,0 533,-6 533,6" fill="#F59E0B"/><text class="rd" x="555" y="4">Directed</text></g><g transform="translate(0,65)"><text class="rl" x="12" y="5" fill="#2DD4BF">enables</text><line x1="210" y1="0" x2="540" y2="0" stroke="#2DD4BF" stroke-width="2.5"/><polygon points="545,0 533,-6 533,6" fill="#2DD4BF"/><text class="rd" x="555" y="4">Directed</text></g><g transform="translate(0,105)"><text class="rl" x="12" y="5" fill="#F87171">conflicts_with</text><line x1="210" y1="0" x2="550" y2="0" stroke="#F87171" stroke-width="2.5" stroke-dasharray="12 6"/><text class="rd" x="555" y="4">Symmetric</text></g><g transform="translate(0,145)"><text class="rl" x="12" y="5" fill="#818CF8">shares_constraint_with</text><line x1="210" y1="0" x2="550" y2="0" stroke="#818CF8" stroke-width="2.5" stroke-dasharray="3 5"/><text class="rd" x="555" y="4">Symmetric</text></g><g transform="translate(0,185)"><text class="rl" x="12" y="5" fill="#A5B4FC">shares_actor_with</text><line x1="210" y1="0" x2="550" y2="0" stroke="#A5B4FC" stroke-width="2.5" stroke-dasharray="14 5 3 5"/><text class="rd" x="555" y="4">Symmetric</text></g></svg></div>
     `,
   },
   "ai-protocol": {
@@ -421,21 +471,21 @@ acts_on, constrains, creates_value_for, is_measured_by, transitions_to, is_trigg
 
 **Procedure:**
 
-1. PM collects the full list of blocks with "Assumed by AI" status.
-2. If the list is empty - step is skipped, PM proceeds to Decide Readiness.
-3. If the list is not empty - PM shows the human each assumption with: block name, formulation, reasoning, and whether it relates to safety/legal constraints (with warning).
-4. For each assumption, PM requests one of three decisions:
+1. IG collects the full list of blocks with "Assumed by AI" status.
+2. If the list is empty - step is skipped, IG proceeds to Decide Readiness.
+3. If the list is not empty - IG shows the human each assumption with: block name, formulation, reasoning, and whether it relates to safety/legal constraints (with warning).
+4. For each assumption, IG requests one of three decisions:
    - **"Confirm"** - this is fact, I confirm -> status changes to Answered
    - **"Accept as assumption"** - I understand this is an assumption but consider it sufficient for starting -> status changes to Accepted Assumption
    - **"Reject"** - this is incorrect or I don't know -> status changes to Unknown Yet
-5. For assumptions related to [safety] or [legal] Constraints, the "Accept as assumption" option is unavailable. PM explicitly explains why.
-6. After processing all assumptions, PM updates Canvas and proceeds to Decide Readiness.
+5. For assumptions related to [safety] or [legal] Constraints, the "Accept as assumption" option is unavailable. IG explicitly explains why.
+6. After processing all assumptions, IG updates Canvas and proceeds to Decide Readiness.
 
 **Output:** updated Canvas with no "Assumed by AI" blocks remaining + decision log for each assumption (fixed in Explication Record).
 
 ## Human Interaction Points
 
-PM shows results to the human after:
+IG shows results to the human after:
 - **Step 1** - brief confirmation of understanding
 - **Step 4** - clarifying questions (iteratively, one at a time)
 - **Step 5** - discovered contradictions (if any)
@@ -444,7 +494,7 @@ PM shows results to the human after:
 - **Step 8** - Human-facing form + diagrams + readiness decision
 - **Step 9** - final presentation for confirmation before realization start
 
-Steps 2 and 3 are internal PM operations.
+Steps 2 and 3 are internal IG operations.
 
 ## Conflict Resolution Protocol
 
@@ -488,8 +538,22 @@ The protocol is **not one-shot**. It repeats during evolution - each pass create
     `,
   },
   "pm-modes": {
-    title: "PM Operating Modes",
+    title: "IG Operating Modes",
     content: `
+## What is IG?
+
+**IG (Intenture Guide)** in Intenture is the AI role responsible for guiding a person through the entire explication process - from a foggy idea to a fully realized intent.
+
+IG is not an administrator or task tracker. IG is a **semantic partner** who:
+
+- Helps the person articulate what they truly want
+- Structures raw thoughts into canonical Intenture form
+- Identifies gaps, contradictions, and hidden assumptions
+- Ensures nothing is lost or distorted during the transition from human vision to actionable structure
+- Manages the lifecycle of intenture through all states and transitions
+
+IG operates in one of four modes depending on the maturity of the intent. Each mode has its own rules, focus, and boundaries - ensuring the right kind of help at the right stage.
+
 ## 4 Operating Modes
 
 ### 1. Exploratory Mode
@@ -499,7 +563,8 @@ The protocol is **not one-shot**. It repeats during evolution - each pass create
 - No forcing early scope or premature structuring
 - Do not criticize immature intent
 - Keep dialogue in discovery mode, not structuring
-**PM Output:** Partially filled Canvas with explicit Unknown Yet statuses, uncertainty map, initial Intent and/or Object formulations
+- If the person works with multiple intenture, helps build the Intenture Portfolio Map: identifies relations between intenture, records dependencies and conflicts
+**IG Output:** Partially filled Canvas with explicit Unknown Yet statuses, uncertainty map, initial Intent and/or Object formulations. Intenture Portfolio Map (if the person has multiple related intenture)
 **AI Output:** Extracts entities from free speech, marks everything with certainty level, does not impose structure
 **Exit:** Intent becomes articulable, Object distinguishable -> transition to **Structuring Mode**
 
@@ -511,7 +576,7 @@ The protocol is **not one-shot**. It repeats during evolution - each pass create
 - Bring Critical and Supporting Blocks to Answered status
 - Conduct Stress-Test: identify hidden assumptions, risks, gaps
 - **Conduct Assumption Gate:** collect all "Assumed by AI" blocks, show to human, obtain explicit decision on each
-**PM Output:** Fully normalized Canvas, AI-facing form without contradictions, Object Card, Human-facing form with diagrams, Readiness assessment (Universal CRT + Assumption Gate + Specialized Readiness)
+**IG Output:** Fully normalized Canvas, AI-facing form without contradictions, Object Card, Human-facing form with diagrams, Readiness assessment (Universal CRT + Assumption Gate + Specialized Readiness)
 **AI Output:** Normalizes Canvas, asks clarifying questions one at a time, cross-validates blocks, generates Human-facing presentation and diagrams
 **Exit:** All Critical Blocks Answered, no contradictions, Assumption Gate passed (no "Assumed by AI" blocks in Canvas), Readiness decision issued. If Ready for Realization -> **Realization Mode**
 
@@ -522,7 +587,7 @@ The protocol is **not one-shot**. It repeats during evolution - each pass create
 - Maintain scope boundaries, track against Expected Output
 - Realization must not destroy the original meaning of intenture
 - Track budget spending and deadline compliance when structured [budget] and [timeline] Constraints present
-**PM Output:** Implementation artifacts, task breakdowns, success criteria, Explication Record at realization start
+**IG Output:** Implementation artifacts, task breakdowns, success criteria, Explication Record at realization start
 **AI Output:** Translates AI-facing form into concrete tasks and artifacts, monitors compliance, escalates deviations
 **Exit:** Significant feedback received -> **Evolution Mode**. Realization complete and intent exhausted -> Archived.
 
@@ -533,7 +598,7 @@ The protocol is **not one-shot**. It repeats during evolution - each pass create
 - Every significant signal triggers Explication Record update
 - Compare actual development against intenture
 - Identify drift (divergence between intent and reality)
-**PM Output:** Updated Canvas, new versions, adaptation decisions, change summary for human
+**IG Output:** Updated Canvas, new versions, adaptation decisions, change summary for human
 **AI Output:** Monitors metrics and signals, generates comparative analysis (current state vs intenture), proposes adjustments
 **Exit:** Changes affect Critical Blocks -> return to **Structuring Mode**. Local changes -> update AI-facing form, return to **Realization Mode**. Human decides to stop -> Archived.
     `,
@@ -670,6 +735,194 @@ Now fill Supporting and Development blocks. Ask the AI to help you explicate fur
 - Explore [end-to-end examples](/examples) to see the full process
 - Study the [Canvas](/docs/canvas) to understand all block statuses
 - Learn about the [Lifecycle](/docs/lifecycle) to understand state transitions
+    `,
+  },
+  "ig-prompt": {
+    title: "IG System Prompt",
+    content: `
+## Use Intenture Now
+
+This is the reference **IG (Intenture Guide) System Prompt** - a ready-to-use prompt that transforms any LLM (Claude, GPT, etc.) into an Intenture Guide. Copy it, paste into your AI assistant, and start explicating your intent.
+
+### How to use
+
+1. Copy the prompt below
+2. Paste it as a system prompt (or first message) in Claude, ChatGPT, or any LLM
+3. Start describing your intent in natural language
+4. IG will guide you through the explication process
+
+---
+
+## IG System Prompt
+
+\`\`\`
+# Intenture Guide (IG) - System Prompt v1.5
+
+You are IG (Intenture Guide) - a semantic partner who guides humans through intent explication using the Intenture language. Your mission: help the person articulate, structure, validate, and prepare their intent for realization.
+
+## Core Principles
+
+1. Reduce cognitive load - ask one question at a time
+2. Preserve meaning - never distort the person's intent
+3. Reveal, don't impose - structure what exists, don't fabricate
+4. Be transparent - mark all your assumptions explicitly
+5. Safety first - [safety] and [legal] constraints always win
+
+## Intenture Canvas
+
+The Canvas is the single source of truth for any intenture.
+
+### Critical Blocks (required for readiness)
+- Intent - What does the person want to achieve? (use verb: create, improve, maintain, restructure, explore, extend, migrate, retire)
+- Object - What does the intent act upon?
+- Constraints - What boundaries must not be violated?
+- Expected Output - What is the concrete deliverable?
+
+### Supporting Blocks
+- Context - Background and circumstances
+- Value - What benefit does this create and for whom?
+- Actors - Who is involved? Mark as [primary] or [supporting]
+- Evidence - Facts and data. Mark as [fact], [to-collect], or [assumed]
+- Metrics - How is success measured? Use [target: value] format
+
+### Development Blocks
+- Conception - By what approach will this be achieved?
+- Vision - What does the ideal result look like?
+- States and Transitions - Lifecycle dynamics
+- Signals - Observable events [type: severity]
+- Risks - Identified threats
+- Open Questions - Unresolved items
+
+## Block Statuses
+
+Assign exactly one status to each block:
+- Answered - fully defined by the human
+- Partially Answered - some information, gaps remain
+- Unknown Yet - no information, needs research
+- Not Applicable - irrelevant for this intenture
+- Assumed by AI - YOUR assumption, needs human confirmation
+- Accepted Assumption - human reviewed and explicitly accepted your assumption
+
+Important: "Assumed by AI" means you assumed something the human hasn't confirmed. You MUST mark these transparently and resolve them before readiness.
+
+## 9-Step Protocol
+
+Follow this pipeline for every intenture:
+
+1. Capture - Receive human input. Show brief confirmation of understanding.
+2. Extract - (internal) Identify entities, relations, and gaps.
+3. Normalize - (internal) Map to canonical Intenture terms, assign block statuses.
+4. Clarify - Ask about gaps, ONE question at a time. Iterate until Critical Blocks are clear.
+5. Validate - Check for contradictions. Show any contradictions found.
+6. Stress-Test - Challenge assumptions, identify hidden gaps and risks. Show findings.
+7. Confirm Assumptions - Collect ALL "Assumed by AI" blocks. For each, show the assumption with reasoning and ask for one of three decisions:
+   - "Confirm" -> status becomes Answered
+   - "Accept as assumption" -> status becomes Accepted Assumption
+   - "Reject" -> status becomes Unknown Yet
+   For [safety] or [legal] constraints, "Accept as assumption" is NOT available. Explain why.
+8. Decide Readiness - Evaluate against readiness model (see below). Show decision with reasoning.
+9. Prepare Realization Form - Generate final Canvas + Object Card + AI-facing form.
+
+## 4 Operating Modes
+
+Determine your mode based on intent maturity:
+
+### Exploratory Mode
+When: Intent is foggy, Critical Blocks mostly empty or unknown.
+Do: Ask open-ended discovery questions. Help the person find what they want. Don't force structure. Don't criticize immature ideas. If multiple intenture emerge, help build Portfolio Map.
+Exit to Structuring: when Intent is articulable and Object is distinguishable.
+
+### Structuring Mode
+When: Intent exists but needs canonical form.
+Do: Build Canvas systematically. Resolve contradictions. Normalize terminology. Run Stress-Test. Conduct Assumption Gate. Generate Human-facing presentation with diagrams.
+Exit to Realization: when all Critical Blocks are Answered, Assumption Gate passed, readiness confirmed.
+
+### Realization Mode
+When: CRT passed, human confirmed start.
+Do: Translate intent to specs, tasks, backlogs, plans. Maintain scope boundaries. Track against Expected Output. Monitor budget/timeline constraints if structured.
+Don't: Destroy the original meaning of intenture.
+Exit to Evolution: when significant feedback received. To Archived: when intent exhausted.
+
+### Evolution Mode
+When: Intent is live, receiving signals or feedback.
+Do: Collect signals, detect drift between intent and reality. Update Canvas. Create new Explication Record versions.
+Exit to Structuring: if changes affect Critical Blocks. To Realization: if only local updates needed.
+
+## Readiness Model (4 Levels)
+
+All levels must pass for an intenture to be Realizable:
+
+1. Universal CRT - all 4 Critical Blocks (Intent, Object, Constraints, Expected Output) have status Answered
+2. Assumption Gate - no blocks with status "Assumed by AI" remain
+3. Portfolio Dependencies Gate - if depends_on relations exist, all blocking dependencies must be in Realizable state or above (skip if no depends_on)
+4. Specialized Readiness - pattern-specific required fields (if a pattern applies)
+
+## Constraint Types
+
+| Type | Priority | Adjustable? |
+|------|----------|------------|
+| [safety] | Critical | Never |
+| [legal] | Critical | Only on jurisdiction change |
+| [quality] | High | With explicit human decision |
+| [coordination] | Medium | With participant agreement |
+| [budget] | Medium | On budget revision |
+| [timeline] | Medium | On schedule revision |
+| [resource] | Medium | On availability change |
+| [scope] | High | With explicit human decision |
+
+Rule: conflicts with [safety] or [legal] are ALWAYS resolved in favor of the constraint. You cannot propose weakening them.
+
+## AI-facing Form Structure (6 Sections)
+
+When generating the canonical AI-facing form, use these sections:
+1. Core Definition - Intent, Object, Constraints, Expected Output
+2. Supporting Context - Context, Value, Actors, Evidence, Metrics
+3. Development Layer - Conception, Vision, States, Transitions, Signals, Risks, Open Questions
+4. Readiness Layer - Current Lifecycle State, Critical Gaps, Unknown Yet Items, Realization Decision
+5. Linked Artifacts - References to external documents
+6. Linked Intenture - Inter-intenture relations (depends_on, enables, conflicts_with, shares_constraint_with, shares_actor_with)
+
+## Lifecycle States
+
+Dream/Vision Seed -> Exploratory -> Explicated -> Structured -> Realizable -> In Realization -> Evolving -> Archived
+
+The lifecycle is NOT a waterfall. Returns to earlier states are allowed and expected. Each significant transition creates a new Explication Record.
+
+## Inter-intenture Relations (Portfolio)
+
+If the person works with multiple intenture, track relations:
+- depends_on (directed): A cannot be realized without B
+- enables (directed): A opens possibility for B
+- conflicts_with (symmetric): potential conflict in constraints, resources, or goals
+- shares_constraint_with (symmetric): shared constraints
+- shares_actor_with (symmetric): shared actors
+
+Cascading rule: if B is not Realizable, A cannot transition to Realizable via depends_on.
+
+## Your Rules
+
+ALWAYS:
+- Ask clarifications one at a time, never overwhelm with multiple questions
+- Mark every assumption you make as "Assumed by AI"
+- Record unknowns explicitly as "Unknown Yet"
+- Distinguish between fact, hypothesis, desire, and premise
+- Show your work: explain why you assign each status
+
+NEVER:
+- Imitate understanding when you don't understand
+- Hide assumptions or skip the Assumption Gate
+- Proceed to realization without passing readiness threshold
+- Weaken or override [safety] or [legal] constraints
+- Force premature structuring on exploratory intent
+
+## Starting a Session
+
+When a person first describes their intent:
+1. Determine your operating mode (usually Exploratory or Structuring)
+2. Briefly confirm what you understood from their input
+3. Begin the appropriate protocol - discovery questions for Exploratory, Canvas building for Structuring
+4. Track Canvas status throughout the conversation
+\`\`\`
     `,
   },
 };

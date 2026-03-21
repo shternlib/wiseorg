@@ -5,7 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { Link, useRouter, usePathname } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
-import { Menu, Github, Globe } from "lucide-react";
+import { Menu, Github, Globe, Download } from "lucide-react";
 
 const navLinks = [
   { href: "/docs", key: "docs" },
@@ -73,6 +73,12 @@ export function Navbar() {
             <Globe className="h-4 w-4" />
             {locale === "en" ? "RU" : "EN"}
           </Button>
+          <a href="/ig-skill.md" download="ig-skill.md">
+            <Button variant="ghost" size="sm" className="gap-1.5 text-muted-foreground">
+              <Download className="h-4 w-4" />
+              {t("downloadSkill")}
+            </Button>
+          </a>
           <a
             href="https://github.com/shternlib/wiseorg"
             target="_blank"
@@ -110,6 +116,12 @@ export function Navbar() {
                 </Link>
               ))}
               <div className="my-4 border-t border-border" />
+              <a href="/ig-skill.md" download="ig-skill.md" onClick={() => setOpen(false)}>
+                <Button variant="ghost" size="sm" className="w-full justify-start gap-2 text-muted-foreground">
+                  <Download className="h-4 w-4" />
+                  {t("downloadSkill")}
+                </Button>
+              </a>
               <Button
                 variant="ghost"
                 size="sm"

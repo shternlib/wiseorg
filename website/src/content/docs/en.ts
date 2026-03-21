@@ -751,6 +751,10 @@ This is the reference **IG (Intenture Guide) System Prompt** - a ready-to-use pr
 3. Start describing your intent in natural language
 4. IG will guide you through the explication process
 
+<div class="my-6 flex gap-3"><a href="/ig-skill.md" download="ig-skill.md" class="inline-flex items-center gap-2 rounded-lg bg-brand-violet px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-violet/90">Download IG Skill (.md)</a></div>
+
+For **Claude Code**: place the downloaded file in \`.claude/commands/ig.md\` and invoke with \`/ig\`.
+
 ---
 
 ## IG System Prompt
